@@ -8,7 +8,7 @@
                 <div class="footer-right">
                     <h3>Get in touch</h3>
                     <div>
-                        <p><i class="ft-home"></i> Rebel Monkey Marketing Ltd,  Co no. 14009110</p> 
+                        <p><i class="ft-home"></i> CC EUROPE LTD,  Co no. 15652312</p> 
                         <p><i class="ft-map-pin"></i>   128 City Road <br>   London EC1V 2NX <br> UNITED KINGDOM</p> 
                         <p><i class="ft-mail"></i> <a href="mailto:support@somonda.com"> support@somonda.com</a></p> 
                     </div>

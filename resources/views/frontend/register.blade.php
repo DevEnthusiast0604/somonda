@@ -58,9 +58,8 @@
                                     </div>
 
                                     <label>@lang('payment_letter') <br>
-                                        <strong>71-75 SHELTON STREET, COVENT GARDEN
-LONDON WC2H 9JQ | Rebel Monkey Marketing Ltd Co no.
-                                            14009110</strong>
+                                        <strong>128 City Road LONDON EC1V 2NX | CC EUROPE LTD Co no.
+                                        15652312</strong>
                                     </label>
                                 </div>
                             </div>

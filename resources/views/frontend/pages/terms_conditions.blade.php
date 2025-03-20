@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="terms">
-                    <h3>Purchase and Membership Terms and Conditions For Somonda.com (Rebel Monkey Marketing Ltd.) </h3>
+                    <h3>Purchase and Membership Terms and Conditions For Somonda.com (CC EUROPE LTD.) </h3>
 
                     <h4>Membership</h4>
                     <p>
@@ -46,7 +46,7 @@
                     <h4>Payment</h4>
                     <p>All payments are completed via Stripe Payments as payment gateways. 
                         On somonda.com, you can pay using VISA, VISA Debit, VISA Electron, MasterCard or Maestro. 
-                        All payments and card charges are factored into product pricing and regulated therein by Rebel Monkey Marketing Ltd. 
+                        All payments and card charges are factored into product pricing and regulated therein by CC EUROPE LTD. 
                         Payment can only be made using a credit card. 
                         You will not be deducted for an amount more than that which was approved upon completion of your purchase. </p>
                     <p>. All prices are shown inclusive of VAT and are current market prices. 
@@ -100,7 +100,7 @@
                     <p>We reserve the right to withhold your refund until we have received the products that are to be
                         returned, unless you can provide proper documentation to this effect.</p>
                     <p>If you wish to cancel your purchase, send your product (s) to:</p>
-                    <p><b>Rebel Monkey Marketing Ltd </b><br>
+                    <p><b>CC EUROPE LTD </b><br>
                          71-75 SHELTON STREET, COVENT GARDEN <br>
                          LONDON <br>
                          WC2H 9JQ  <br>
@@ -114,7 +114,7 @@
                         number itself.</p>
 
                     <h4>Your right to complain</h4>
-                    <p>Rebel Monkey Marketing Ltd. offers the standard legal complaints procedure, applicable for 12 months after delivery. 
+                    <p>CC EUROPE LTD. offers the standard legal complaints procedure, applicable for 12 months after delivery. 
                         This means that you can get your product repaired, exchanged, get your money back or receive a price reduction, 
                         depending on the situation in question. 
                         Your complaint must be valid, meaning that any faults cannot be the result of incorrect use of the product or destructive behavior.
@@ -133,11 +133,12 @@
                     <h4>Defective product(s)</h4>
                     <p>In case a product is faulty or missing parts and you wish to file a complaint, send the item in
                         question to:</p>
-                    <p><b>Rebel Monkey Marketing Ltd</b> <br>
-                        71-75 SHELTON STREET, COVENT GARDEN <br>
+                    <p><b>CC EUROPE LTD</b> <br>
+                        128 City Road <br>
                         LONDON <br>
-                        WC2H 9JQ <br>
-                        Company number: 14009110
+                        United Kingdom <br>
+                        EC1V 2NX <br>
+                        Numéro d'organisation: 15652312
                     </p>
                     <p>When you return a defective product, you are required to disclose the problem in as detailed of a
                         manner as possible. In order to expedite the process, we also advise you to include additional
@@ -167,7 +168,7 @@
                         You also have the right to know which of your personal details we have registered. These rights
                         are part of the data protection act. For more information, contact us at <a
                             href="mailto:support@somonda.com">support@somonda.com</a>.
-                        Rebel Monkey Marketing Ltd. is responsible for the data stored on somonda.com. Information given to
+                        CC EUROPE LTD. is responsible for the data stored on somonda.com. Information given to
                         somonda.com is not forwarded or sold to third parties. Moreover, we do not register any
                         sensitive information. When you sign up for our newsletter, we register your email address. Your
                         email is treated as confidential; we do not give it to anyone else. You can unsubscribe at any
@@ -194,11 +195,12 @@
                         work conflicts and missing or delayed delivery from our suppliers.</p>
 
                     <h4>Company information</h4>
-                    <p><b>Rebel Monkey Marketing Ltd</b> <br>
-                        71-75 SHELTON STREET, COVENT GARDEN <br>
+                    <p><b>CC EUROPE LTD</b> <br>
+                        128 City Road <br>
                         LONDON <br>
-                        WC2H 9JQ <br>
-                        Company number: 14009110
+                        United Kingdom <br>
+                        EC1V 2NX <br>
+                        Numéro d'organisation: 15652312
                     </p>
                     <p><strong>Year of Establishment: 2023</strong></p>
                     <p>

@@ -969,10 +969,10 @@
                                     </li>
                                 </ul>
                                 <div class="company text-white">
-                                    Rebel Monkey Marketing Ltd <br>Company Number: 14009110
+                                    CC EUROPE LTD <br>Numéro d'organisation: 15652312
                                 </div>
                                 <address class="text-white">
-                                 71-75 SHELTON STREET, COVENT GARDEN <br/>LONDON <br/> WC2H 9JQ
+                                    128 City Road <br/>LONDON <br/> United Kingdom <br/> EC1V 2NX
                                 </address>
 
                                 <div class="email">

@@ -18,7 +18,7 @@
                           It also describes the choices available to you regarding our use of your Personal Information and how you can access and update it.
                     </p>
                     <p>
-                        This Policy is a legally binding agreement between you (“User”, “you” or “your”) and Rebel Monkey Marketing Ltd (“Rebel Monkey Marketing Ltd”, “we”, “us” or “our”). If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms “User”, “you” or “your” shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Website and Services. By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Policy. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage. 
+                        This Policy is a legally binding agreement between you (“User”, “you” or “your”) and CC EUROPE LTD (“CC EUROPE LTD”, “we”, “us” or “our”). If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms “User”, “you” or “your” shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Website and Services. By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Policy. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage. 
                     </p>
 
                     <h4>Collection of personal information </h4>
@@ -146,7 +146,7 @@
                     </p>
 
                     <h4>Your right to complain</h4>
-                    <p>Rebel Monkey Marketing Ltd. offers the standard legal complaints procedure, applicable for 12 months after
+                    <p>CC EUROPE LTD. offers the standard legal complaints procedure, applicable for 12 months after
                         delivery. This means that you can get your product repaired, exchanged, get your money back or
                         receive a price reduction, depending on the situation in question. Your complaint must be valid,
                         meaning that any faults cannot be the result of incorrect use of the product or destructive
