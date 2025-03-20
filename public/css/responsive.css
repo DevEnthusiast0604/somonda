@@ -1,0 +1,369 @@
+@media(max-width: 991px) {
+	.mobile_toggle span {
+		background: #ff6f89;
+		width: 30px;
+		height: 3px;
+		-webkit-transition: all 0.4s;
+		-o-transition: all 0.4s;
+		transition: all 0.4s;
+		display: block;
+		margin: 5px 0 0;
+
+	}
+
+	.touch_btn {
+		padding-right: 20px;
+	}
+
+	.better_nav ul {
+		position: fixed;
+		top: 0;
+		background: #fff;
+		height: 100vh;
+		width: 100%;
+		left: 0;
+		justify-content: center !important;
+		z-index: 10;
+		flex-direction: column;
+		align-items: center;
+		transform: translateX(-100%);
+		transition: all 0.4s;
+		opacity: 0;
+	}
+
+	.openmenu .better_nav ul {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.openmenu .mobile_toggle {
+		position: fixed;
+		z-index: 111;
+		right: 30px;
+		top: 30px;
+	}
+
+	.openmenu .mobile_toggle span:first-child {
+		-webkit-transform: rotate(45deg)translateY(10px);
+		-ms-transform: rotate(45deg)translateY(10px);
+		transform: rotate(45deg)translateY(10px);
+	}
+
+	.openmenu .mobile_toggle span:last-child {
+		-webkit-transform: rotate(-45deg) translateY(-10px);
+		-ms-transform: rotate(-45deg) translateY(-10px);
+		transform: rotate(-45deg) translateY(-10px);
+		margin-top: 5px;
+	}
+
+	.openmenu .mobile_toggle span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.plan_price {
+		font-size: 35px;
+	}
+
+	.better_nav li {
+		margin: 0 0 20px 0;
+	}
+
+	.about_readtext h3 {
+		font-size: 25px;
+	}
+
+	.service_text h3 {
+		font-size: 18px;
+	}
+
+	.mainhead h3 {
+		font-size: 30px;
+		letter-spacing: 0px;
+	}
+
+	.mainhead p {
+		margin: 0 auto 30px;
+	}
+
+	section, footer {
+		padding: 40px 0 !important;
+	}
+
+	.our_sevices, .banner_slider {
+		padding: 0 !important
+	}
+
+	.copyright {
+		padding: 10px 0 !important;
+	}
+
+	.pricing_main {
+		padding: 30px 20px;
+	}
+
+	.choose_plan {
+		font-size: 20px;
+	}
+
+	.price-list li {
+		font-size: 14px;
+	}
+
+	.count_set {
+		margin-bottom: 20px;
+	}
+
+	.count_set:nth-last-of-type(-n+2) {
+		margin-bottom: 0px;
+	}
+
+	.blog-title a, .signup_text h6 {
+		font-size: 18px;
+	}
+
+	.services, .about_footertext, .contact_us {
+		margin-bottom: 40px;
+	}
+
+	.slide_caption h1 span, .slide_caption h1 {
+		font-size: 25px;
+	}
+
+	.slide_caption h1 {
+		max-width: 70%;
+	}
+
+	.service_text {
+		padding: 20px 10px;
+	}
+
+	.about_pagetext {
+		padding-right: 0px;
+	}
+
+	.image_with_text h3 {
+		font-size: 24px;
+	}
+
+	.panl_upcontent {
+		max-width: 80%;
+	}
+
+	.image_with_text {
+		right: 0;
+	}
+
+	.inner-contact {
+		padding: 20px;
+	}
+
+	.contact-info strong {
+		padding-left: 4px;
+	}
+}
+
+@media (max-width:767px) {
+	#support{
+		display: none;
+	}
+	footer{
+		display: none;
+	}
+	.slick-slide{
+		height: auto;
+	}
+	.service_text{
+		height: auto;
+	}
+	.services li:last-child a {
+		margin: 0;
+	}
+	.termofservice {
+        padding: 30px 0;
+    }
+
+    .termofservice h2{    font-size: 25px;}
+    .termofservice h3{font-size: 20px;}
+	.pricng_plans::before {
+		height: 100%;
+	}
+
+	.standard_pan {
+		transform: scale(1);
+	}
+
+	.slick-prev {
+		left: 0px
+	}
+
+	.slick-next {
+		right: 0px
+	}
+
+	.mainhead h3 {
+		font-size: 19px;
+	}
+
+	.mainhead p {
+		font-size: 15px;
+	}
+
+	.mainhead p br {
+		display: none;
+	}
+
+	.make_call_area, .touch_btn {
+		display: none !important;
+	}
+
+	header .d-flex {
+		justify-content: space-between;
+	}
+
+	.slides, .main_banner {
+		height: 50vh;
+	}
+
+	.about_readtext h3 {
+		font-size: 20px;
+	}
+
+	.about_readtext {
+		margin-bottom: 20px;
+	}
+
+	.pricing_table, .signup_form {
+		padding-top: 20px;
+	}
+
+	.pricing_col, .blogs_home {
+		margin-bottom: 40px;
+	}
+
+	.pricing_col:last-child, .blogs_home:last-child {
+		margin-bottom: 0px;
+	}
+
+	.litble_about {
+		max-width: 100%;
+	}
+
+	.form-inner {
+		padding: 20px;
+		width: auto;
+	}
+
+	.inner_title h3 {
+		font-size: 20px;
+	}
+
+	.blog-col {
+		margin-bottom: 25px !important;
+	}
+
+	.blog-col:last-child {
+		margin-bottom: 0px !important;
+	}
+
+	.single_blogs-row {
+		margin: 30px 0;
+		padding: 0 !important;
+	}
+
+	.thumbnail_title {
+		font-size: 22px;
+	}
+
+	.search_form {
+		margin-top: 25px;
+	}
+
+	.panl_upcontent h4 {
+		font-size: 21px
+	}
+
+
+
+}
+
+@media (max-width:575px) {
+	.our_sevices .mainrow_Service {
+		display: block !important;
+	}
+
+	.slide_caption h1 {
+		max-width: 100%;
+	}
+
+	.banner_slider .slick-dots {
+		bottom: 3px;
+	}
+
+	.slide_caption h1 {
+		max-width: 100%;
+	}
+
+	.services, .about_footertext, .contact_us {
+		margin-bottom: 30px;
+	}
+
+	.main_button {
+		font-size: 14px;
+
+		padding: 12px 40px;
+	}
+
+	.better_logo img {
+		max-width: 150px;
+		/* width: 150px; */
+	}
+
+	.mobile_hidden{
+		display: none;
+	}
+
+	.service_pannel {
+		height: auto;
+	}
+
+	.panl_upcontent {
+		position: static;
+		transform: translate(0);
+		max-width: 100%;
+	}
+
+	.ourServices_pannel .nav-tabs .nav-link {
+		padding: 15px 0;
+	}
+
+	.ourServices_pannel .nav-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.contact_col {
+		display: block !important;
+	}
+
+	.contact_inner .main_map, .get_inform {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.contact-info li {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.iconInfo, .call_info {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+	}
+	.inner-contact {
+		padding: 40px 15px;
+
+	}
+}

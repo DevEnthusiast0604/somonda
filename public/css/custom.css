@@ -1,0 +1,52 @@
+#support {
+    min-height: 4rem;
+    background: #1C75BC;
+    padding:10px 0;
+    color: white;
+}
+
+#support h5 {
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:0;
+}
+#support .row {
+    margin-top:10px ;
+}
+
+.fixed-top {
+    margin-top:70px;
+    transition:all 80ms ease-in;
+}
+
+.fixed-top.coompack-nav {
+    margin-top:0px;
+}
+
+.pricing__item .pricing__header .pricing__title {
+    font-weight:bold;
+}
+
+.pricing__item .pricing__header .pricing__title.bronze-grad {
+    background: linear-gradient(to bottom, #CD7F32 0%, #BE7023 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #CD7F32), color-stop(100%, #BE7023));
+    background: -webkit-linear-gradient(top, #CD7F32 0%, #BE7023 100%);
+    background: -moz-linear-gradient(top, #CD7F32 0%, #BE7023 100%);
+    background: -o-linear-gradient(top, #CD7F32 0%, #BE7023 100%);
+    background: -ms-linear-gradient(top, #CD7F32 0%, #BE7023 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CD7F32', endColorstr='#BE7023', GradientType=0);
+}
+
+.pricing__item .pricing__header .pricing__title.silver-grad {
+    background: linear-gradient(to bottom, #C0C0C0 0%, #B1B1B1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C0C0C0), color-stop(100%, #B1B1B1));
+    background: -webkit-linear-gradient(top, #C0C0C0 0%, #B1B1B1 100%);
+    background: -moz-linear-gradient(top, #C0C0C0 0%, #B1B1B1 100%);
+    background: -o-linear-gradient(top, #C0C0C0 0%, #B1B1B1 100%);
+    background: -ms-linear-gradient(top, #C0C0C0 0%, #B1B1B1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C0C0C0', endColorstr='#B1B1B1', GradientType=0);
+}
+
+.pricing__item .pricing__header .pricing__title.gold-grad {
+    background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+}

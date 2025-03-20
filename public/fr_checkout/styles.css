@@ -1,0 +1,328 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #fff !important;
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+{% if app_locale() == 'ar' %}text-align: right !important;{% endif %}
+}
+
+body .bg {
+    min-height: 100%;
+    background-color: rgba(180, 79, 162, 1);
+    background-image: url("assets/img/bg-mobile.svg");
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+    background-position: cover;
+    transition: background-image .5s;
+    padding-bottom: 0rem !important;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.p1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.mainheading-container {
+    font-size: 20px;
+    text-align: center;
+}
+
+.productimg {
+    height: auto;
+    width: 100%
+}
+
+.offer-container {
+    position: relative;
+}
+
+.price-container {
+    background: linear-gradient(146deg, rgba(2, 0, 36, 1) 0%, rgba(252, 70, 107, 1) 0%, rgba(180, 79, 162, 1) 100%);
+    width: 120px;
+    height: 120px;
+    border-radius: 75px;
+    position: absolute;
+    left: 170px;
+}
+
+.price-container p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.spec-icon {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.spec-description {
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    margin: 5px;
+}
+
+.form-section {
+    margin-top: 50px;
+}
+
+.form-section p {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.card {
+    -webkit-box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    background-color: inherit !important;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: inherit;
+}
+
+#time {
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(180, 79, 162, 1);
+}
+
+.btn {
+    -webkit-box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 24px -18px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold
+}
+
+.btn:hover {
+    background-color: rgba(180, 79, 162, 1);
+}
+
+
+@media (min-width: 768px) {
+    body .bg {
+        background-image: url("assets/img/gradient.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: #f6f6f6;
+        background-size: 100vw;
+    }
+
+    .mainheading-container {
+        margin-top: 1rem;
+    }
+
+    .price-container {
+        font-size: 20px;
+        left: 95px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .price-container p {
+        margin-top: 20px;
+    }
+
+    .spec-container {
+        margin-top: 250px;
+    }
+
+    .form-section {
+        margin-top: 0;
+    }
+
+    .btn {
+        width: 60%;
+    }
+}
+
+.title-specs {
+    border-bottom: 2px solid rgba(252, 70, 107, 1);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.iti {
+    width: 100%;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .top-text {
+        font-size: 7px
+    }
+}
+
+#product2 {
+    margin: 0 auto;
+}
+
+#product1, #product3, #product2 {
+    cursor: pointer;
+}
+
+.slide-in {
+    float: left;
+    animation-duration: 6s;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    0% {
+        margin-left: calc(-100% - 1rem);
+    }
+
+    70% {
+        margin-left: calc(-100% - 1rem);
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+.inner {
+    border: 1px solid #707070;
+    border-radius: 6px;
+    width: 100%;
+    min-height: 61px;
+    display:grid;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scaleX(1) scaleY(1);
+    }
+
+    50% {
+        transform: scaleX(1.2) scaleY(1.2);
+    }
+
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: inherit !important;
+    border-radius: .25rem;
+}
+
+@media only screen and (min-width : 415px) and (max-width : 767px) {
+    .mainheading-container {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    #product1 {
+        width: 100px;
+    }
+
+    #product2 {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .mainheading-container {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    #product1 {
+        width: 100px;
+    }
+
+    #product2 {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width : 360px) and (max-width : 410px) {
+
+    #product1 {
+        width: 85px;
+        height: auto;
+    }
+
+    #product2 {
+        width: 85px;
+        height: auto;
+    }
+}
+
+.form-section {
+    background-color: white;
+    z-index: 1;
+    margin-top: 0;
+
+}
+
+.inner:hover {
+    border: 1px solid green;
+}
+
+.top-text {
+    font-size: 9px;
+}
+
+.big-cont {
+    z-index: 4;
+}
+
+#btn-submit {
+    background: linear-gradient(#6AA4FD, #3974E4) !important;
+    color: white;
+    border-radius: 12px;
+}
+
+#btn-submit:hover {
+    background: linear-gradient(#3974E4, #6AA4FD) !important;
+    color: white;
+}
+
+.mainheading-container {
+    z-index: 1;
+    position: relative;
+}
+
+.inner-text {
+    padding: 11px 4px;
+    align-self:center;
+}
