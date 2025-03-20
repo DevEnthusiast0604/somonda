@@ -12,7 +12,7 @@
                             <div class="logo mx-auto">
                                 <a href="index.html">
                                     <figure class="mx-auto">
-                                        <img src="assets/images/Somonda_Logo_Black.png" alt="">
+                                        <img src="assets/images/plusdeal_logo.png" alt="">
                                     </figure>
                                 </a>
                             </div>

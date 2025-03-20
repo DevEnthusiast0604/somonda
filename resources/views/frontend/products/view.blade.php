@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somonda | {{$product['name']}} </title>
-    <link rel="icon" type="image/png" href="{{asset('assets/images/somonda_favicon.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('assets/images/plusdeal_logo.png')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -76,7 +76,7 @@
                         <div class="logo">
                             <a class="navbar-brand py-0" href="{{url('/')}}">
                                 <figure>
-                                    <img src="{{asset('assets/images/Somonda_Logo_Black.png')}}" alt="Logo">
+                                    <img src="{{asset('assets/images/plusdeal_logo.png')}}" alt="Logo">
                                 </figure>
                             </a>
                         </div>

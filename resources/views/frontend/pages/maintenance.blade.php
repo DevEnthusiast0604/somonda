@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/responsive.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/toastr.css')}}">
 
-    <link rel="icon" type="image/png" href="{{asset('assets/images/somonda_favicon.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('assets/images/plusdeal_logo.png')}}">
 
 </head>
 

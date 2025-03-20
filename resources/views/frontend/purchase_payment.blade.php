@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Somonda</title>
-    <link rel="icon" type="image/png" href="{{asset('assets/images/somonda_favicon.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('assets/images/plusdeal_logo.png')}}">
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="{{asset('fr_checkout/bootstrap.min.css')}}">

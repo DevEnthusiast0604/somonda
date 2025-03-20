@@ -8,7 +8,7 @@
                 <div class="col-lg-7">
                     <div class="infor_left_wrapper">
                         <div class="logo">
-                            <img src="{{asset('assets/images/Somonda_Logo_Black.png')}}" alt="Logo">
+                            <img src="{{asset('assets/images/plusdeal_logo.png')}}" alt="Logo">
                         </div>
                         <div class="mobile_cart_wrapper mb-3">
                             <div class="accordion accordion-flush" id="accordionFlushExample">

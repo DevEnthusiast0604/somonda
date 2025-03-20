@@ -229,7 +229,7 @@
                         <div class="col-md-12">
                             <div class="popcontent" style="padding-top: 30px; padding-bottom: 30px">
                                 <center>
-                                    <img src="{{asset('assets/images/Somonda_Logo_Black.png')}}" width="100">
+                                    <img src="{{asset('assets/images/plusdeal_logo.png')}}" width="100">
                                 </center>
                                 <br>
                                 <h2 style="text-align: center; font-size: 16px; margin-top: 15px">
