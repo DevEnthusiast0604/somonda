@@ -9,7 +9,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Deal | Admin Dashboard</title>
+    <title>PlusDeal | Admin Dashboard</title>
     <link rel="icon" type="image/png" href="{{asset('assets/images/plusdeal_logo.png')}}">
     <link
         href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900|Montserrat:300,400,500,600,700,800,900"

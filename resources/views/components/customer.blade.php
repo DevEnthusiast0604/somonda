@@ -2,7 +2,7 @@
     <div class="container">
         <div class="customer-area">
             <div class="heading mx-auto">
-                <h2 class="text-center"><span>Why we</span><span class="love"></span><span>Deal</span></h2>
+                <h2 class="text-center"><span>Why we</span><span class="love"></span><span>PlusDeal</span></h2>
                 <!-- <p class="text-center">Join more than 5.000 happy customers</p> -->
             </div>
             <!-- <div class="row">
