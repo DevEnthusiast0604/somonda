@@ -153,7 +153,7 @@
                                             </td>
                                             <td>{{$row->sku}}</td>
                                             <td>
-                                                kr {{$row->wholesalePrice}} / kr {{$row->retailPrice}} 
+                                                € {{$row->wholesalePrice}} / € {{$row->retailPrice}} 
                                             </td>
                                  
                                             <td>
