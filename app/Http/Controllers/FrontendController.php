@@ -56,7 +56,7 @@ class FrontendController extends Controller
     }
 
     public function index(Request $request){
-        App::setLocale('en');
+        App::setLocale('fr');
         session()->put('locale', 'en');
         $bestseller1 = Product::where('status', 1)->orderBy('name')->take('4')->get();
         $bestseller2 = Product::where('status', 1)->orderBy('name','desc')->take('6')->get();
