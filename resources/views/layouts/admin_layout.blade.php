@@ -196,7 +196,7 @@
             <!-- BEGIN : Footer-->
             <footer class="footer footer-static footer-light">
                 <p class="clearfix text-muted text-sm-center px-2 pb-2"><span style="bottom:10px">&copy; Copyright
-                        {{date('Y')}} Somonda. All Rights Reserved
+                        {{date('Y')}} PlusDeal. All Rights Reserved
                     </span></p>
             </footer>
             <!-- End : Footer-->

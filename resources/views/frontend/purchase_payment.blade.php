@@ -99,7 +99,7 @@
                     <div class="main_lef text-center">
                         <p class="above-title">@lang('first_claim')</p>
                         <h2 class="py-0">
-                            <span>Somonda</span>
+                            <span>PlusDeal</span>
                             // <small class="text-body">/ {{$product['name']}}</small>
                         </h2>
                         <!-- <p class="sub-title">Et puis il y en avait 13.</p> -->
@@ -353,7 +353,7 @@
         <div class="container">
             <div class="row py-5 align-items-center">
                 <div class="col-12 col-md-12 text-center">
-                    <h2>&copy; {{date('Y')}} Somonda. All Rights Reserved</h2>
+                    <h2>&copy; {{date('Y')}} PlusDeal. All Rights Reserved</h2>
                     <p class="mb-0 pt-2 small">
                          @lang('purchase_footer')
                     </p>

@@ -328,7 +328,7 @@ class FrontendController extends Controller
             'email' => 'required',
             // 'g-recaptcha-response' => 'required|recaptchav3:register,0.5'
         ]);
-        Mail::to('support@somonda.com')->send(new ContactMail($request));
+        Mail::to('support@plusdeal.fr')->send(new ContactMail($request));
         // Mail::to('dev.expertweblancer@gmail.com')->send(new ContactMail($request));
         return Redirect::back()->with('success', 'We will touch you soon in 24 hours.');
     }
@@ -397,7 +397,7 @@ class FrontendController extends Controller
                     'currency' => 'eur',
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
-                    'description' => 'Purchase products from Somonda',
+                    'description' => 'Purchase products from PlusDeal',
                     'confirm' => true
                 ]);
                 if ($paymentIntent->status === 'requires_action' && $paymentIntent->next_action->type === 'use_stripe_sdk') {
@@ -541,7 +541,7 @@ class FrontendController extends Controller
             $user->save();
             Mail::to($user->email)->send(new WelcomeMail($data));
             
-            return redirect()->route('login')->with('success', ' You are now member of Somonda. We sent an email with your password.');
+            return redirect()->route('login')->with('success', ' You are now member of PlusDeal. We sent an email with your password.');
 		}catch (Exception $e){
 		  $user->delete();
 		  return back()->with('error', $e->getMessage());

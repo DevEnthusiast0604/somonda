@@ -976,7 +976,7 @@
                                 </address>
 
                                 <div class="email">
-                                    <a class="text-white" href="mailto:support@Somonda.com">support@Somonda.com</a>
+                                    <a class="text-white" href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>
                                 </div>
                                 <!-- 
                                 <div class="contact-btn bg-white">
@@ -987,7 +987,7 @@
                     </div>
 
                     <div class="copyright">
-                        <p class="text-white">&copy; {{date('Y')}} Somonda. All Rights Reserved</p>
+                        <p class="text-white">&copy; {{date('Y')}} PlusDeal. All Rights Reserved</p>
                     </div>
                 </div><!-- //end .footer-area -->
             </div>

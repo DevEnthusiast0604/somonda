@@ -14,7 +14,7 @@
     "delivery" : "Entrega",
     "delivery_faq" : "Todos os produtos são enviados no mesmo dia se você encomendar antes das 16. Nós entregamos todos os nossos pacotes com Post Nord e você receberá um e-mail com um número de rastreamento quando seu pacote for despachado. Você pode escolher se deseja deseja que o pacote seja entregue em sua casa ou em qual caixa de pacote você pode precisar. deseja que seja entregue. Em alguns casos, o item solicitado está em nosso depósito remoto. Se for esse o caso, você deve esperar um prazo de entrega de até 3 -5 dias para o produto.",
     "touch_with": "Devo entrar em contato com a Somonda?",
-    "touch_faq" : "Estamos prontos todos os dias da semana das 10:00 às 14:00 e o ajudaremos se você tiver alguma dúvida. <br><br> Podemos ser contatados via: <br>support@somonda.com <br ><br>Respondemos a todas as perguntas em 24 horas.",
+    "touch_faq" : "Estamos prontos todos os dias da semana das 10:00 às 14:00 e o ajudaremos se você tiver alguma dúvida. <br><br> Podemos ser contatados via: <br>support@plusdeal.fr <br ><br>Respondemos a todas as perguntas em 24 horas.",
     "membership" : "Associação",
     "membership_price": "Preço da assinatura",
     "your_basket" : "Sua cesta",
@@ -120,7 +120,7 @@
     "discover_reading_3_description": "Como cliente, sua satisfação é garantida",
     "discover_reading_4": "Oferta exclusiva",
     "discover_reading_4_description": "Apenas agora, você pode obter um vale-presente para comprar por quase nada.",
-    "purchase_footer" : "Seus dados serão usados para processar seu pedido, comercializar sua experiência neste site e para outros fins descritos em nossa política de privacidade. Li e concordo com os termos e condições de somonda.com e entendo que com isso comprar Estou me inscrevendo em somonda.com e receberei boletins informativos por e-mail. O pagamento é feito por meio de uma conexão SSL criptografada. Se precisar de mais informações, entre em contato conosco em support@somonda.com.",
+    "purchase_footer" : "Seus dados serão usados para processar seu pedido, comercializar sua experiência neste site e para outros fins descritos em nossa política de privacidade. Li e concordo com os termos e condições de somonda.com e entendo que com isso comprar Estou me inscrevendo em somonda.com e receberei boletins informativos por e-mail. O pagamento é feito por meio de uma conexão SSL criptografada. Se precisar de mais informações, entre em contato conosco em support@plusdeal.fr.",
     "pay_now": "Pagar agora",
 
     "checkout_title" : "Comece seu teste de 3 dias agora!",
@@ -140,5 +140,5 @@
     "card_number" : "Número do cartão",
     "accept" : "Eu aceito" ,
     "checkout_terms": "os termos e condições",
-    "checkout_description": "Seus dados serão usados para processar seu pedido, promover sua experiência neste site e para outros fins descritos em nossa política de privacidade. Li e concordo com os termos e condições do ehealthiii.com e entendo que através desta compra Estou me inscrevendo em ehealthiii.com e receberei boletins informativos por e-mail. ehealthiii.com é um serviço de compras baseado em assinatura, ao preço de € 65 a cada 30 dias, após um período de avaliação de 3 dias, a menos que seja cancelado antes do término da avaliação. 3 dias até € 2,95. O pagamento é feito através de uma conexão SSL criptografada. Se precisar de mais informações, entre em contato conosco pelo e-mail support@somonda.com."
+    "checkout_description": "Seus dados serão usados para processar seu pedido, promover sua experiência neste site e para outros fins descritos em nossa política de privacidade. Li e concordo com os termos e condições do ehealthiii.com e entendo que através desta compra Estou me inscrevendo em ehealthiii.com e receberei boletins informativos por e-mail. ehealthiii.com é um serviço de compras baseado em assinatura, ao preço de € 65 a cada 30 dias, após um período de avaliação de 3 dias, a menos que seja cancelado antes do término da avaliação. 3 dias até € 2,95. O pagamento é feito através de uma conexão SSL criptografada. Se precisar de mais informações, entre em contato conosco pelo e-mail support@plusdeal.fr."
 }

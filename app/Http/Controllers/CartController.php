@@ -257,7 +257,7 @@ class CartController extends Controller
                     "amount" => 100 * $price,
                     "currency" => "dkk",
                     "customer" => $user->stripe_id,
-                    "description" => "Purchase products from Somonoda",
+                    "description" => "Purchase products from PlusDeal",
                     "return_url" => route('thankyou'),
                 ]); 
             }else{
@@ -265,7 +265,7 @@ class CartController extends Controller
                     "amount" => 100 * $price,
                     "currency" => "dkk",
                     "source" => $token,
-                    "description" => "Purchase products from Somonoda" ,
+                    "description" => "Purchase products from PlusDeal" ,
                     "return_url" => route('thankyou'),
                 ]);
             } 
@@ -355,7 +355,7 @@ class CartController extends Controller
                     'currency' => 'dkk',
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
-                    'description' => 'Purchase products from Somonda',
+                    'description' => 'Purchase products from PlusDeal',
                 ]);
               
                 if ($paymentIntent->status === 'requires_confirmation') {
@@ -496,7 +496,7 @@ class CartController extends Controller
                     'currency' => 'dkk',
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
-                    'description' => 'Purchase products from Somonda',
+                    'description' => 'Purchase products from PlusDeal',
                     'confirm' => true
                 ]);
                 if ($paymentIntent->status === 'requires_action' && $paymentIntent->next_action->type === 'use_stripe_sdk') {

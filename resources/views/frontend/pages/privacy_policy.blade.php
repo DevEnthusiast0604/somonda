@@ -13,7 +13,7 @@
                     <p>
                         We respect your privacy and are committed to protecting it through our compliance with this privacy policy (“Policy”). 
                         This Policy describes the types of information we may collect from you or that you may provide (“Personal Information”)
-                         on the Somonda.com website (“Website” or “Service”) and any of its related products and services (collectively, “Services”),
+                         on the Plusdeal.fr website (“Website” or “Service”) and any of its related products and services (collectively, “Services”),
                           and our practices for collecting, using, maintaining, protecting, and disclosing that Personal Information. 
                           It also describes the choices available to you regarding our use of your Personal Information and how you can access and update it.
                     </p>
@@ -160,7 +160,7 @@
 
                     <h4>Contacting us</h4>
                     <p>If you have any questions, concerns, or complaints regarding this Policy, the information we hold about you, or if you wish to exercise your rights, we encourage you to contact us using the details below: </p>
-                    <p> <a href="mailto:support@somonda.com">support@somonda.com</a>
+                    <p> <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>
                     </p>
                     <p>
                         We will attempt to resolve complaints and disputes and make every reasonable effort to honor your wish to exercise your rights as quickly as possible and in any event, within the timescales provided by applicable data protection laws. 

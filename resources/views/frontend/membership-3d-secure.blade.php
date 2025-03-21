@@ -47,7 +47,7 @@
                     <h5>Need help? Contact us for everything from plans to refunds</h5>
                 </div>
                 <div class="col-12 col-md-auto">
-                    <a href="mailto:support@somonda.com">support@somonda.com</a>
+                    <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@
                                 @lang('descriptor')
                             </div>
                             <div class="col text-muted text-end">
-                            Somonda.com
+                            Plusdeal.fr
                             </div>
                         </div>
                     </div>

@@ -36,7 +36,7 @@
 	</div>
 
 	<footer class="site-footer" id="footer">
-		<p class="site-footer__fineprint" id="fineprint">Copyright ©{{date('Y')}} somonda | All Rights Reserved</p>
+		<p class="site-footer__fineprint" id="fineprint">Copyright ©{{date('Y')}} PlusDeal | All Rights Reserved</p>
 	</footer>
 </body>
 </html>

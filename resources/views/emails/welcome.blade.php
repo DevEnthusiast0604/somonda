@@ -17,7 +17,7 @@
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="icon" href="{{asset('images/somonda_logo_white.png')}}">
+    <link rel="icon" href="{{asset('images/plusdeal_white.png')}}">
 
  
 
@@ -131,7 +131,7 @@
                                                 <td class="tbrr p30-15" style="padding: 60px 30px; border-radius:26px 26px 0px 0px;" bgcolor="#12325c">
                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td class="h1 pb25" style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:40px; line-height:46px; text-align:center; padding-bottom:25px;">  <img src="https://somonda.com/assets/images/Somonda_Logo_White.png" width="150"  alt=""></td>
+                                                            <td class="h1 pb25" style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:40px; line-height:46px; text-align:center; padding-bottom:25px;">  <img src="https://plusdeal.fr/assets/images/plusdeal_white.png" width="150"  alt=""></td>
                                                         </tr>
                                                         <tr>
                                                             <td class="text-center pb25" style="color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:10px;">Hi, {{$data['username']}}. Thank you for shopping with us.
@@ -146,7 +146,7 @@
                                                             <td align="center">
                                                                 <table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
                                                                     <tr>
-                                                                        <td class="pink-button text-button" style="background:#ff6666; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="https://somonda.com/login" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">Login Now</span></a></td>
+                                                                        <td class="pink-button text-button" style="background:#ff6666; color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:0px 22px 22px 22px; font-weight:bold;"><a href="https://plusdeal.fr/login" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">Login Now</span></a></td>
                                                                     </tr>
                                                                 </table>
                                                             </td>
@@ -166,7 +166,7 @@
                                     <td class="p30-15 bbrr" style="padding: 50px 30px; border-radius:0px 0px 26px 26px;" bgcolor="#0e264b">
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                             <tr>
-                                                <td class="text-footer1 pb10" style="color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:20px; text-align:center; padding-bottom:10px;"> somonda</td>
+                                                <td class="text-footer1 pb10" style="color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:20px; text-align:center; padding-bottom:10px;"> PlusDeal</td>
                                             </tr>
                                         </table>
                                     </td>

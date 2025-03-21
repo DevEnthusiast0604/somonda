@@ -7,66 +7,66 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="terms">
-                    <h3>Purchase and Membership Terms and Conditions For Somonda.com (CC EUROPE LTD.) </h3>
+                    <h3>Purchase and Membership Terms and Conditions For Plusdeal.fr (CC EUROPE LTD.) </h3>
 
                     <h4>Membership</h4>
                     <p>
-                        somonda.com is an online membership site that provides large discounts on a variety of well-known products. 
+                        plusdeal.fr is an online membership site that provides large discounts on a variety of well-known products. 
                         To become a member, you must be over 18 years of age, 
                         which you are required to confirm when you register and make your first purchase. 
-                        somonda.com is only for private customers and for personal use. 
+                        plusdeal.fr is only for private customers and for personal use. 
                         Membership costs 179 DKK per month. Your subscription is deducted every month, until you cancel your membership.
-                        You can terminate your membership at any time by logging into Somonda.com and selecting “My Membership” from the menu tab. The only exception is during the first 48 hours of membership, within which your subscription is locked due to technical reasons and you cannot cancel it manually under the "My Membership" tab. 
-                        Otherwise you can cancel through support on <a href="mailto:support@somonda.com">support@somonda.com</a>.
+                        You can terminate your membership at any time by logging into Plusdeal.fr and selecting “My Membership” from the menu tab. The only exception is during the first 48 hours of membership, within which your subscription is locked due to technical reasons and you cannot cancel it manually under the "My Membership" tab. 
+                        Otherwise you can cancel through support on <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>.
                     </p>
 
                     <h4>How to purchase</h4>
                     <p>
-                    When shopping at Somonda.com you need to become a paid member to gain access to our huge, discounted product range. 
+                    When shopping at Plusdeal.fr you need to become a paid member to gain access to our huge, discounted product range. 
                     You can sign up for a 7-days trial of our membership and buy straight away at discounted prices. 
                     After the trial your membership will automatically charge 179 DKK every month until cancellation. 
                     Remember that you can unsubscribe from your membership whenever you wish. 
                     Once your order has been completed, you will receive an order confirmation via email. 
                     You will receive another email once we have dispatched your order. 
                     If you would like to receive a physical copy of your order confirmation, please send an email to 
-                    <a href="mailto:support@Somonda.com">support@Somonda.com</a>.
+                    <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>.
                     </p>
 
 
                     <h4>Orders</h4>
                     <p>
-                        On somonda.com, it is only possible to order products via our website.
+                        On plusdeal.fr, it is only possible to order products via our website.
                     </p>
 
                     <h4>Order cancellations</h4>
                     <p>If you have made an order and wish to cancel it, please contact support on our support email
-                        <a href="mailto:support@somonda.com">support@somonda.com</a>
+                        <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>
                     </p>
 
                     <h4>Payment</h4>
                     <p>All payments are completed via Stripe Payments as payment gateways. 
-                        On somonda.com, you can pay using VISA, VISA Debit, VISA Electron, MasterCard or Maestro. 
+                        On plusdeal.fr, you can pay using VISA, VISA Debit, VISA Electron, MasterCard or Maestro. 
                         All payments and card charges are factored into product pricing and regulated therein by CC EUROPE LTD. 
                         Payment can only be made using a credit card. 
                         You will not be deducted for an amount more than that which was approved upon completion of your purchase. </p>
                     <p>. All prices are shown inclusive of VAT and are current market prices. 
-                        When you shop on somonda.com, all agreements are made in English.</p>
+                        When you shop on plusdeal.fr, all agreements are made in English.</p>
 
                     <h4>Delivery</h4>
-                    <P>Orders made on somonda.com are delivered by DHL or UPS. 
+                    <P>Orders made on plusdeal.fr are delivered by DHL or UPS. 
                         The expected delivery time is 3-5 business days (after dispatch). 
-                        For members of somonda.com the shipping is free.</P>
+                        For members of plusdeal.fr the shipping is free.</P>
 
                     <h4>Cancellation policies and return of products</h4>
-                    <p>somonda.com offers a cancellation policy of 90 days (the standard, legally endorsed policy is 14
+                    <p>plusdeal.fr offers a cancellation policy of 90 days (the standard, legally endorsed policy is 14
                         days). This period is valid from the day you receive delivery of your purchased goods.</p>
                     <p>If you wish to return one or more purchased products let us know via email at
-                        <a href="mailto:support@somonda.com">support@Somonda.com</a> (we reply within 24 hours on
+                        <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a> (we reply within 24 hours on
                         weekdays.)
                     </p>
                     <p>You cannot cancel your order simply by refusing to accept delivery. 
                         Cancellation must be clearly communicated by sending an email to
-                        <a href="mailto:support@somonda.com">support@Somonda.com</a>.
+                        <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>.
                     </p>
                     <p>Regarding sealed goods not suitable for return due to health protection or hygiene reasons, 
                         your right to cancel the order ends once the seal on the goods is broken after delivery.</p>
@@ -123,9 +123,9 @@
 
                     <h4>How quickly should I file a complaint?</h4>
                     <p>Contact us as soon as you notice a mistake or missing parts on and for a product that has been
-                        purchased on somonda.com. This should happen as soon as possible or within a reasonable time
+                        purchased on plusdeal.fr. This should happen as soon as possible or within a reasonable time
                         period from the moment you notice that there is something wrong with your product. File your
-                        complaint via <a href="mailto:support@somonda.com">support@somonda.com</a>, after which we
+                        complaint via <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>, after which we
                         will address the issue in question.
                         Complaints are considered timely if they are filed within two months after product faults have
                         been detected.</p>
@@ -148,49 +148,49 @@
 
                     <h4>Complaints</h4>
                     <p>If you are not satisfied with your membership or purchase, you are welcome to contact us via
-                        email at <a href="mailto:support@somonda.com">support@somonda.com</a>. </p>
+                        email at <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>. </p>
 
                     <h4>Children and minors</h4>
-                    <p>When you register on somonda.com, you are required to confirm that you are over 18 years of age.
+                    <p>When you register on plusdeal.fr, you are required to confirm that you are over 18 years of age.
                         If you are under 18, registration and subscription needs to be completed by a parent or a legal
                         guardian. An agreement can be easily revoked by a parent or a legal guardian if it has been made
                         by a minor.</p>
 
                     <h4>Your personal information</h4>
-                    <p>When you register on somonda.com, your name, address, telephone number and email are stored in
-                        an electronic customer database that is only accessible to somonda employees. These personal
+                    <p>When you register on plusdeal.fr, your name, address, telephone number and email are stored in
+                        an electronic customer database that is only accessible to plusdeal employees. These personal
                         details are saved so that we can deliver your orders and in accordance with accounting
                         legislation, which dictates that material used in relation to transactions is to be stored for 5
                         years after the accounting year which it is valid for. Before your personal information is saved
-                        on somonda.com, we make sure that your consent is given and that you know exactly which
+                        on plusdeal.fr, we make sure that your consent is given and that you know exactly which
                         information is saved. Customer information is always encrypted.</p>
-                    <p>As an existing customer on somonda.com, you always have the right to revoke your registration.
+                    <p>As an existing customer on plusdeal.fr, you always have the right to revoke your registration.
                         You also have the right to know which of your personal details we have registered. These rights
                         are part of the data protection act. For more information, contact us at <a
-                            href="mailto:support@somonda.com">support@somonda.com</a>.
-                        CC EUROPE LTD. is responsible for the data stored on somonda.com. Information given to
-                        somonda.com is not forwarded or sold to third parties. Moreover, we do not register any
+                            href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>.
+                        CC EUROPE LTD. is responsible for the data stored on plusdeal.fr. Information given to
+                        plusdeal.fr is not forwarded or sold to third parties. Moreover, we do not register any
                         sensitive information. When you sign up for our newsletter, we register your email address. Your
                         email is treated as confidential; we do not give it to anyone else. You can unsubscribe at any
                         time via the link in the footer of the newsletter.</p>
 
                     <h4>Cookies</h4>
-                    <p>somonda.com uses cookies. We do so with the sole motive of making it easier for you to log in
-                        and see relevant products and new offers when you visit somonda.com. A cookie is a file that
+                    <p>plusdeal.fr uses cookies. We do so with the sole motive of making it easier for you to log in
+                        and see relevant products and new offers when you visit plusdeal.fr. A cookie is a file that
                         contains data about whether you are a new or returning customer, which products you click on and
                         other information about your behavior on the website. A cookie is stored on your PC, tablet or
                         mobile phone. A cookie cannot identify you as a person. It can only recognise your PC, tablet or
-                        mobile phone and ensure you view a customized version of somonda.com. A cookie is typically
+                        mobile phone and ensure you view a customized version of plusdeal.fr. A cookie is typically
                         stored for 12 months.</p>
                     <p>You can set your browser settings so that you get a warning when you receive a cookie. You can
                         also delete cookies altogether from your browser. It is possible to delete your cookies via your
                         browser’s settings, should you wish to do so. If you have questions regarding your cookies, feel
                         free to get in touch with us via email at <a
-                            href="mailto:support@somonda.com">support@somonda.com</a>. </p>
+                            href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>. </p>
 
 
                     <h4>Disclaimer</h4>
-                    <p>The prices on somonda.com are current prices, based on the market prices at any given time.
+                    <p>The prices on plusdeal.fr are current prices, based on the market prices at any given time.
                         Therefore, we reserve the right to changes in prices resulting from force majeure, hereunder
                         work conflicts and missing or delayed delivery from our suppliers.</p>
 

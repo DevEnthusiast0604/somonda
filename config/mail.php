@@ -87,8 +87,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'support@somonda.com'),
-        'name' => env('MAIL_FROM_NAME', 'Somonda'),
+        'address' => env('MAIL_FROM_ADDRESS', 'support@plusdeal.fr'),
+        'name' => env('MAIL_FROM_NAME', 'PlusDeal'),
     ],
 
     /*

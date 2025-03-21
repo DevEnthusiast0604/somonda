@@ -86,8 +86,8 @@
                                         <div class="px-3">
                                             <h5>On your bill, charges may appear as</h5>
                                             <ul>
-                                                <li> somonda.com 4402895813060</li>
-                                                <li> trial*somonda.com 4402895813060</li>
+                                                <li> plusdeal.fr 4402895813060</li>
+                                                <li> trial*plusdeal.fr 4402895813060</li>
                                             </ul>
                                          </div>
                                     </div>

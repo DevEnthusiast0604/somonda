@@ -149,7 +149,7 @@
                                                         <tr>
                                                             <td class="h1 pb25"
                                                                 style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:40px; line-height:46px; text-align:center; padding-bottom:25px;">
-                                                                <img src="https://somonda.com/assets/images/somonda_logo_white.png" width="250" alt=""></td>
+                                                                <img src="https://plusdeal.fr/assets/images/plusdeal_white.png" width="250" alt=""></td>
                                                         </tr>
                                                         <tr>
                                                             <td class="text-center pb25"
@@ -183,7 +183,7 @@
                                             <tr>
                                                 <td class="text-footer1 pb10"
                                                     style="color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:20px; text-align:center; padding-bottom:10px;">
-                                                    Somonda</td>
+                                                    PlusDeal</td>
                                             </tr>
 
                                         </table>

@@ -114,8 +114,8 @@ LONDON WC2H 9JQ | Rebel Monkey Marketing Ltd Co no. 14009110</strong> -->
                                         <div class="px-3">
                                             <h5>On your bill, charges may appear as</h5>
                                             <ul>
-                                                <li> Somonda.com 4402895813060</li>
-                                                <li> trial*Somonda.com 4402895813060</li>
+                                                <li> plusdeal.fr 4402895813060</li>
+                                                <li> trial*plusdeal.fr 4402895813060</li>
                                             </ul>
                                          </div>
                                     </div>

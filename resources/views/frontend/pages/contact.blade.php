@@ -10,7 +10,7 @@
                     <div>
                         <p><i class="ft-home"></i> CC EUROPE LTD,  Co no. 15652312</p> 
                         <p><i class="ft-map-pin"></i>   128 City Road <br>   London EC1V 2NX <br> UNITED KINGDOM</p> 
-                        <p><i class="ft-mail"></i> <a href="mailto:support@somonda.com"> support@somonda.com</a></p> 
+                        <p><i class="ft-mail"></i> <a href="mailto:support@plusdeal.fr"> support@plusdeal.fr</a></p> 
                     </div>
                 </div>
             </div>

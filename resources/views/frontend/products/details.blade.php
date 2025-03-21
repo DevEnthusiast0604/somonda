@@ -106,7 +106,7 @@
 											<h5>Member price</h5>
 											<span>{{$data->wholesalePrice}} kr</span>
 											<p>
-											Somonda prices only apply to members. The price for membership is 179 kr/mo and continues automatically until terminated. Can be terminated at the end of a membership period. The first 7 days are free - read more about the benefits.
+											PlusDeal prices only apply to members. The price for membership is 179 kr/mo and continues automatically until terminated. Can be terminated at the end of a membership period. The first 7 days are free - read more about the benefits.
 											</p>
 
 											<ul class="nav">
