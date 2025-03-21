@@ -233,7 +233,7 @@
                                 </center>
                                 <br>
                                 <h2 style="text-align: center; font-size: 16px; margin-top: 15px">
-                                Somonda' prices are for both members and non-members.
+                                Deal' prices are for both members and non-members.
                                 Membership costs  
                                     <span style="text-decoration: underline">
                                         <span style="color: #377E62;">179 kr</span>/month.
