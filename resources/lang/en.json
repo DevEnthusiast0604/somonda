@@ -225,5 +225,12 @@
      "Enter your email Address": "Enter your email Address",
      "Membership": "Membership",
      "Search...": "Search...",
-     "Basket": "Basket"
+     "Basket": "Basket",
+     "Welcome back!": "Welcome back!",
+     "Forgot Password": "Forgot Password",
+     "Sign In": "Sign In",
+     "Register now": "Register now",
+     "Not an existing user?": "Not an existing user?",
+     "Email": "Email",
+     "Password": "Password"
 }

@@ -224,5 +224,12 @@
     "Enter your email Address": "Entrez votre adresse e-mail",
     "Membership": "Adhésion",
     "Search...": "Recherche...",
-    "Basket": "Panier"
+    "Basket": "Panier",
+    "Welcome back!": "Content de te revoir!",
+    "Forgot Password": "Mot de passe oublié",
+    "Sign In": "Se connecter",
+    "Register now": "Inscrivez-vous maintenant",
+    "Not an existing user?": "Vous n'êtes pas un utilisateur existant ?",
+    "Email": "E-mail",
+    "Password": "Mot de passe"
 }

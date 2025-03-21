@@ -69,6 +69,6 @@ class Kernel extends HttpKernel
         'setlocale' => \App\Http\Middleware\SetLocale::class,
         // 'phone_verify' => \App\Http\Middleware\Phoneverify::class,
         // 'membership' => \App\Http\Middleware\Membership::class,
-
+        'setPageLocale' => \App\Http\Middleware\SetPageLocale::class,
     ];
 }

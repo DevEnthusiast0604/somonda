@@ -19,7 +19,7 @@ Auth::routes([
 
 Route::get('lang/{locale}', [App\Http\Controllers\LocalizationController::class, 'index'])->name('setLanguage');
 
-Route::middleware('is_maintenance')->group(function () {
+Route::middleware(['setPageLocale:fr', 'is_maintenance'])->group(function () {
     Route::get('/', [FrontendController::class,'index'])->name('home');
     // Route::view('/member_register','frontend.register')->name('member.register');
     // Route::post('/member_register_checkout', [FrontendController::class, 'member_register_checkout'])->name('member.register.checkout');

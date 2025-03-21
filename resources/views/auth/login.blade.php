@@ -17,7 +17,7 @@
                                 </a>
                             </div>
 
-                            <h4 class="text-center">Welcome back!</h4>
+                            <h4 class="text-center">@lang('Welcome back!')</h4>
                         </div>
                         @if (\Session::has('success'))
                         <div class="alert alert-fill alert-success alert-dismissible fade show" role="alert">
@@ -33,7 +33,7 @@
                     
                         <div class="form-group">
                             <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{old('email')}}" 
-                                placeholder="Email">
+                                placeholder="@lang('Email')">
                             @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -42,17 +42,17 @@
                         </div>
 
                         <div class="form-group mb-4">
-                            <input type="password" class="form-control" name="password" placeholder="Password *">
+                            <input type="password" class="form-control" name="password" placeholder="@lang('Password') *">
                         </div>
 
                         <div class="info">
-                            <a href="{{url('password/reset')}}">Forgot Password *</a>
+                            <a href="{{url('password/reset')}}">@lang('Forgot Password') *</a>
                         </div>
 
-                        <button type="submit" class="text-white mx-auto login_btn">Sign In</button>
+                        <button type="submit" class="text-white mx-auto login_btn">@lang('Sign In')</button>
 
                         <div class="text-center">
-                            <span>Not an existing user? <a href="{{route('membership')}}">Register now</a></span>
+                            <span>@lang('Not an existing user?') <a href="{{route('membership')}}">@lang('Register now')</a></span>
                         </div>
                     </form>
                 </div>
