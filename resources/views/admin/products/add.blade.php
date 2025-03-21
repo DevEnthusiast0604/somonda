@@ -158,14 +158,14 @@
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>wholesale Price (kr)</label>
+                                                <label>wholesale Price (€)</label>
                                                 <input type="number" step="0.01" class="form-control round"
                                                     required name="wholesalePrice">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>retail Price (kr)</label>
+                                                <label>retail Price (€)</label>
                                                 <input type="number" step="0.01" class="form-control round"
                                                    required name="retailPrice">
                                             </div>
@@ -186,42 +186,42 @@
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>NO Wholesale Price (Kr)</label>
+                                                <label>NO Wholesale Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                  required name="no_wholesalePrice">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>NO Retail Price (Kr)</label>
+                                                <label>NO Retail Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     required name="no_retailPrice">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>SE Wholesale Price (Kr)</label>
+                                                <label>SE Wholesale Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                    required name="se_wholesalePrice">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>SE Retail Price (Kr)</label>
+                                                <label>SE Retail Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     required name="se_retailPrice">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>FI Wholesale Price (kr)</label>
+                                                <label>FI Wholesale Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                 required name="fi_wholesalePrice">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>FI Retail Price (kr)</label>
+                                                <label>FI Retail Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                 required name="fi_retailPrice" >
                                             </div>

@@ -13,6 +13,7 @@ use Illuminate\Mail\Message;
 use App\Mail\AdsMail;
 use DB, Session, Redirect;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class ProductController extends Controller
 {
@@ -250,49 +251,53 @@ class ProductController extends Controller
     }
 
     public function store(Request $request){
-        $this->validate($request,[
-            'name' => 'required',
-        ]);
-        $prod = new Product;
-        $image = $request->file('image');
-        if($image){
-            $image_name = rand() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('uploads/products'), $image_name);
-        }else{
-            $image_name = '';
+        try {
+            $this->validate($request,[
+                'name' => 'required',
+            ]);
+            $prod = new Product;
+            $image = $request->file('image');
+            if($image){
+                $image_name = rand() . '.' . $image->getClientOriginalExtension();
+                $image->move(public_path('uploads/products'), $image_name);
+            }else{
+                $image_name = '';
+            }
+            $prod->name = $request->name;
+            $prod->sku = $request->sku;
+            $prod->stock = $request->stock;
+            $prod->category_id = $request->category_id;
+            $prod->name = $request->name;
+            $prod->weight = $request->weight;
+            $prod->height = $request->height;
+            $prod->width = $request->width;
+            $prod->depth = $request->depth;
+            $prod->wholesalePrice = $request->wholesalePrice;
+            $prod->no_wholesalePrice = $request->no_wholesalePrice;
+            $prod->se_wholesalePrice = $request->se_wholesalePrice;
+            $prod->fi_wholesalePrice = $request->fi_wholesalePrice;
+            $prod->retailPrice = $request->retailPrice;
+            $prod->no_retailPrice = $request->no_retailPrice;
+            $prod->se_retailPrice = $request->se_retailPrice;
+            $prod->fi_retailPrice = $request->fi_retailPrice;
+            $prod->taxRate = $request->taxRate;
+            $prod->condition = $request->condition;
+            $prod->status = $request->status;
+            $prod->image = $image_name;
+            $prod->custom = 1;
+            $prod->description = $request->description;
+            $prod->save();
+            $prod->url = $prod->id.'-'.str_replace(' ', '-', $request->name);
+            $prod->save();
+    
+            $productdetail = new Productdetail;
+            $productdetail->product_id = $prod->id;
+            $productdetail->save();
+    
+            return Redirect::route('admin.products')->with('success', 'Product was added successfully!');  
+        } catch (\Exception $e){
+            Log::error('Error occurred: ', $e->getMessage());
         }
-        $prod->name = $request->name;
-        $prod->sku = $request->sku;
-        $prod->stock = $request->stock;
-        $prod->category_id = $request->category_id;
-        $prod->name = $request->name;
-        $prod->weight = $request->weight;
-        $prod->height = $request->height;
-        $prod->width = $request->width;
-        $prod->depth = $request->depth;
-        $prod->wholesalePrice = $request->wholesalePrice;
-        $prod->no_wholesalePrice = $request->no_wholesalePrice;
-        $prod->se_wholesalePrice = $request->se_wholesalePrice;
-        $prod->fi_wholesalePrice = $request->fi_wholesalePrice;
-        $prod->retailPrice = $request->retailPrice;
-        $prod->no_retailPrice = $request->no_retailPrice;
-        $prod->se_retailPrice = $request->se_retailPrice;
-        $prod->fi_retailPrice = $request->fi_retailPrice;
-        $prod->taxRate = $request->taxRate;
-        $prod->condition = $request->condition;
-        $prod->status = $request->status;
-        $prod->image = $image_name;
-        $prod->custom = 1;
-        $prod->description = $request->description;
-        $prod->save();
-        $prod->url = $prod->id.'-'.str_replace(' ', '-', $request->name);
-        $prod->save();
-
-        $productdetail = new Productdetail;
-        $productdetail->product_id = $prod->id;
-        $productdetail->save();
-
-        return Redirect::route('admin.products')->with('success', 'Product was added successfully!');  
     }
 
     public function update(Request $request, $id){
