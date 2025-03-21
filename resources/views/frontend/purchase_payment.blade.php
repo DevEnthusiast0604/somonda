@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Somonda</title>
+    <title>Deal</title>
     <link rel="icon" type="image/png" href="{{asset('assets/images/plusdeal_logo.png')}}">
 
     <!--Bootstrap-->

@@ -10,7 +10,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="x-apple-disable-message-reformatting" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i" rel="stylesheet" />
-    <title>Somonda</title>
+    <title>Deal</title>
     <meta name="description"
         content="N2touch.com is a global site that connect communities across the globe with sharing with each other ideas of proven models that have helped their local communities come together and help those in need... Pass it forward on a global scale." />
     

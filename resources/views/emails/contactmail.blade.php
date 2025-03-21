@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="x-apple-disable-message-reformatting" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i" rel="stylesheet" />
-    <title>Somonda</title>
+    <title>Deal</title>
 
 
     <style type="text/css" media="screen">
