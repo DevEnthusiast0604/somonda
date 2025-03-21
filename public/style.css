@@ -905,7 +905,7 @@ header {
 	display: table;
 	height: 48px;
 	line-height: 48px;
-	background: #1C75BC;
+	background: #69b783;
 	font-weight: 500;
 	font-size: 19px;
 	text-transform: uppercase;
@@ -1359,7 +1359,7 @@ header {
 	line-height: 40px;
 	border-radius: 50px;
 	-webkit-border-radius: 50px;
-	background: #1C75BC;
+	background: #69b783;
 	margin-top: 18px;
 }
 .get-in-touch-btn a {
@@ -1413,6 +1413,15 @@ header {
 	padding: 0 29px;
 	border: 0;
 	background: #1C75BC;
+	border-radius: 50px;
+}
+
+.subscribe-btn {
+	font-weight: 500;
+	font-size: 19px;
+	padding: 0 29px;
+	border: 0;
+	background: #69b783;
 	border-radius: 50px;
 }
 /*==============================
@@ -1621,7 +1630,7 @@ header {
 }
 .add-btn  button {
 	display: block;
-	background: #1C75BC;
+	background: #69b783;
 	border-radius: 50px!important;
 
 }
@@ -2323,7 +2332,7 @@ footer {
     font-size: 19px;
 	padding: 5px 35px;
     border: 0;
-    background: #1C75BC;
+    background: #69b783;
     border-radius: 50px;
 	color: white;
 }
