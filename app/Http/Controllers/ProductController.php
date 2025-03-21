@@ -159,69 +159,73 @@ class ProductController extends Controller
     }
 
     public function add(Request $request){
-        set_time_limit(0);
-        $prod = Product::find($request->product);
-        if($prod){
-            return redirect()->back()->with('warning', 'Already exist product!');
-        }else{
-            $prod_details = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/product/'.$request->product)->json();
-            $prod_stocks = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/productstock/'.$request->product.'.json?isoCode=en')->json();
-            $prod_information = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/productinformation/'.$request->product.'.json?isoCode=en')->json();
-            $prod_languages = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/productinformationalllanguages/'.$request->product.'.json?isoCode=en')->json();
-
-            $prod = new Product;
-            $prod->id = $prod_information[0]['id'];
-            $prod->sku = $prod_information[0]['sku'];
-            $prod->url = $prod_information[0]['url'];
-            $prod->name = $prod_information[0]['name'];
-            $prod->description = $prod_information[0]['description'];
-            $prod->dateUpdDescription = $prod_information[0]['dateUpdDescription'];
-            $prod->isoCode = $prod_information[0]['isoCode'];
-            $prod->manufacturer = $prod_details['manufacturer'];
-            $prod->weight = $prod_details['weight'];
-            $prod->height = $prod_details['height'];
-            $prod->width = $prod_details['width'];
-            $prod->depth = $prod_details['depth'];
-            $prod->category_id = $prod_details['taxonomy'];
-            $prod->wholesalePrice = $prod_details['wholesalePrice'];
-            $prod->retailPrice = $prod_details['retailPrice'];
-            $prod->active = $prod_details['active'];
-            $prod->taxRate = $prod_details['taxRate'];
-            $prod->taxId = $prod_details['taxId'];
-            $prod->inShopsPrice = $prod_details['inShopsPrice'];
-            $prod->condition = $prod_details['condition'];
-            $prod->logisticClass = $prod_details['logisticClass'];
-            $prod->image = $prod_details['images']['images'][0]['url'];
-            $images = [];
-            foreach($prod_details['images']['images'] as $key=>$row){
-                $images[$key] = $row['url'];
+        try {
+            set_time_limit(0);
+            $prod = Product::find($request->product);
+            if($prod){
+                return redirect()->back()->with('warning', 'Already exist product!');
+            }else{
+                $prod_details = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/product/'.$request->product)->json();
+                $prod_stocks = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/productstock/'.$request->product.'.json?isoCode=en')->json();
+                $prod_information = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/productinformation/'.$request->product.'.json?isoCode=en')->json();
+                $prod_languages = Http::withToken($this->bigbuy_api_key)->get($this->bigbuy_api_url.'rest/catalog/productinformationalllanguages/'.$request->product.'.json?isoCode=en')->json();
+    
+                $prod = new Product;
+                $prod->id = $prod_information[0]['id'];
+                $prod->sku = $prod_information[0]['sku'];
+                $prod->url = $prod_information[0]['url'];
+                $prod->name = $prod_information[0]['name'];
+                $prod->description = $prod_information[0]['description'];
+                $prod->dateUpdDescription = $prod_information[0]['dateUpdDescription'];
+                $prod->isoCode = $prod_information[0]['isoCode'];
+                $prod->manufacturer = $prod_details['manufacturer'];
+                $prod->weight = $prod_details['weight'];
+                $prod->height = $prod_details['height'];
+                $prod->width = $prod_details['width'];
+                $prod->depth = $prod_details['depth'];
+                $prod->category_id = $prod_details['taxonomy'];
+                $prod->wholesalePrice = $prod_details['wholesalePrice'];
+                $prod->retailPrice = $prod_details['retailPrice'];
+                $prod->active = $prod_details['active'];
+                $prod->taxRate = $prod_details['taxRate'];
+                $prod->taxId = $prod_details['taxId'];
+                $prod->inShopsPrice = $prod_details['inShopsPrice'];
+                $prod->condition = $prod_details['condition'];
+                $prod->logisticClass = $prod_details['logisticClass'];
+                $prod->image = $prod_details['images']['images'][0]['url'];
+                $images = [];
+                foreach($prod_details['images']['images'] as $key=>$row){
+                    $images[$key] = $row['url'];
+                }
+                $prod->images = serialize($images);
+                $prod->stock = $prod_stocks['stocks'][0]['quantity'];
+                $prod->save();
+    
+                $prod_lang = new Productdetail;
+                $prod_lang->fr_name = $prod_languages[2]["name"];
+                $prod_lang->fr_description = $prod_languages[2]["description"];
+                $prod_lang->pt_name = $prod_languages[4]["name"];
+                $prod_lang->pt_description = $prod_languages[4]["description"];
+                $prod_lang->it_name = $prod_languages[7]["name"];
+                $prod_lang->it_description = $prod_languages[7]["description"];
+                $prod_lang->da_name = $prod_languages[9]["name"];
+                $prod_lang->da_description = $prod_languages[9]["description"];
+                $prod_lang->sv_name = $prod_languages[22]["name"];
+                $prod_lang->sv_description = $prod_languages[22]["description"];
+                $prod_lang->ge_name = $prod_languages[3]["name"];
+                $prod_lang->ge_description = $prod_languages[3]["description"];
+                $prod_lang->nl_name = $prod_languages[19]["name"];
+                $prod_lang->nl_description = $prod_languages[19]["description"];
+                $prod_lang->no_name = $prod_languages[21]["name"];
+                $prod_lang->no_description = $prod_languages[21]["description"];
+                $prod_lang->fi_name = $prod_languages[10]["name"];
+                $prod_lang->fi_description = $prod_languages[10]["description"];
+                $prod_lang->product_id = $prod->id;
+                $prod_lang->save();
+                return redirect()->back()->with('success', 'A new product is added successfully'); 
             }
-            $prod->images = serialize($images);
-            $prod->stock = $prod_stocks['stocks'][0]['quantity'];
-            $prod->save();
-
-            $prod_lang = new Productdetail;
-            $prod_lang->fr_name = $prod_languages[2]["name"];
-            $prod_lang->fr_description = $prod_languages[2]["description"];
-            $prod_lang->pt_name = $prod_languages[4]["name"];
-            $prod_lang->pt_description = $prod_languages[4]["description"];
-            $prod_lang->it_name = $prod_languages[7]["name"];
-            $prod_lang->it_description = $prod_languages[7]["description"];
-            $prod_lang->da_name = $prod_languages[9]["name"];
-            $prod_lang->da_description = $prod_languages[9]["description"];
-            $prod_lang->sv_name = $prod_languages[22]["name"];
-            $prod_lang->sv_description = $prod_languages[22]["description"];
-            $prod_lang->ge_name = $prod_languages[3]["name"];
-            $prod_lang->ge_description = $prod_languages[3]["description"];
-            $prod_lang->nl_name = $prod_languages[19]["name"];
-            $prod_lang->nl_description = $prod_languages[19]["description"];
-            $prod_lang->no_name = $prod_languages[21]["name"];
-            $prod_lang->no_description = $prod_languages[21]["description"];
-            $prod_lang->fi_name = $prod_languages[10]["name"];
-            $prod_lang->fi_description = $prod_languages[10]["description"];
-            $prod_lang->product_id = $prod->id;
-            $prod_lang->save();
-            return redirect()->back()->with('success', 'A new product is added successfully'); 
+        } catch (\Exception $e) {
+            Log::error('Error occurred', ['exception' => $e]);
         }
     }
 
@@ -296,7 +300,7 @@ class ProductController extends Controller
     
             return Redirect::route('admin.products')->with('success', 'Product was added successfully!');  
         } catch (\Exception $e){
-            Log::error('Error occurred: ', $e->getMessage());
+            Log::error('Error occurred', ['exception' => $e]);
         }
     }
 
