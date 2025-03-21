@@ -14,7 +14,7 @@
                         <form class="d-flex bg-white" role="search">
                             <input class="form-control border-0" type="search" placeholder="Search..."
                                 aria-label="Search">
-                            <button class="btn" type="submit">Search</button>
+                            <button class="btn" type="submit">@lang('Search')</button>
                         </form>
                     </div>
                 </div>
@@ -24,14 +24,14 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">Is delivery alway free?</button>
+                                    aria-controls="collapseOne">@lang('Is delivery alway free?')</button>
                             </h2>
 
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
-                                    Delivery is free for all paying members. If you're not a paying maybe then you will be charges kr3.95 for shipping.
+                                        @lang("Delivery is free for all paying members. If you're not a paying maybe then you will be charges 3.95€ for shipping.")
                                     </p>
                                 </div>
                             </div>
@@ -41,15 +41,14 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">What is your cancellation
-                                    policy?</button>
+                                    aria-expanded="false" aria-controls="collapseTwo">@lang('What is your cancellation policy?')</button>
                             </h2>
 
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
-                                    You can cancel you membership at any point. But you can't get a refund for your already paid membership.
+                                        @lang("You can cancel you membership at any point. But you can't get a refund for your already paid membership.")
                                     </p>
                                 </div>
                             </div>
@@ -59,13 +58,13 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">How long is the delivery time?</button>
+                                    aria-expanded="false" aria-controls="collapseThree">@lang('How long is the delivery time?')</button>
                             </h2>
 
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>We always do our best to deliver your package within 3-5 days. If you haven't received your order - please contact customer support.</p>
+                                    <p>@lang("We always do our best to deliver your package within 3-5 days. If you haven't received your order - please contact customer support.")</p>
                                 </div>
                             </div>
                         </div>
@@ -82,8 +81,8 @@
                             </figure>
 
                             <div class="info">
-                                <h5>Still have question?</h5>
-                                <p>Can’t find the answer your’re looking for? Please chat to our friendly team.
+                                <h5>@lang('Still have question?')</h5>
+                                <p>@lang('Can’t find the answer your’re looking for? Please chat to our friendly team.')
                                 </p>
                             </div>
                         </div>
@@ -91,7 +90,7 @@
 
                     <div class="col-sm-4">
                         <div class="get-in-touch-btn ms-auto">
-                            <a class="text-white" href="{{route('contact')}}">get in touch</a>
+                            <a class="text-white" href="{{route('contact')}}">@lang('get in touch')</a>
                         </div>
                     </div>
                 </div>

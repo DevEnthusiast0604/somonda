@@ -93,9 +93,9 @@
                         <div class="header-right d-flex">
                             <div class="header-menu bg-white">
                                 <form class="d-none d-lg-flex" role="search">
-                                    <input class="form-control border-0" type="search" placeholder="Search..."
+                                    <input class="form-control border-0" type="search" placeholder="@lang('Search...')"
                                         aria-label="Search">
-                                    <button class="btn" type="submit">Search</button>
+                                    <button class="btn" type="submit">@lang('Search')</button>
                                 </form>
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -104,15 +104,15 @@
                                     </div> -->
 
                                     <form class="d-flex d-lg-none" role="search">
-                                        <input class="form-control border-0" type="search" placeholder="Search..."
+                                        <input class="form-control border-0" type="search" placeholder="@lang('Search...')"
                                             aria-label="Search">
-                                        <button class="btn" type="submit">Search</button>
+                                        <button class="btn" type="submit">@lang('Search')</button>
                                     </form>
 
                                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">Beauty</a>
+                                                data-bs-toggle="dropdown" aria-expanded="false">@lang('Beauty')</a>
                                             <ul class="dropdown-menu">
                                                 <div class="dropdown-menu-container">
                                                     <div class="container">
@@ -121,7 +121,7 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Hair care</h4>
+                                                                            <h4>@lang('Hair care')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/category/2520_small.jpg"
                                                                                     alt="">
@@ -139,7 +139,7 @@
 
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Make-up</h4>
+                                                                            <h4>@lang('Make-up')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/category/2555_small.jpg"
                                                                                     alt="">
@@ -156,7 +156,7 @@
                                                                     </div>
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Perfumes and Fragrances</h4>
+                                                                            <h4>@lang('Perfumes and Fragrances')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/category/2508_small.jpg"
                                                                                     alt="">
@@ -173,7 +173,7 @@
                                                                     </div>
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Skincare</h4>
+                                                                            <h4>@lang('Skincare')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/4005900993830_S05111493_P00.jpg"
                                                                                     alt="">
@@ -191,17 +191,17 @@
                                                                 </div>
   
                                                                 <div class="subcribe-form">
-                                                                    <h3>Subscribe with us</h3>
+                                                                    <h3>@lang('Subscribe with us')</h3>
                                                                     <form>
                                                                         <input type="email" class="form-control"
-                                                                            placeholder="Enter your email Address">
+                                                                            placeholder="@lang('Enter your email Address')">
                                                                     </form>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-5 col-lg-4">
                                                                 <div class="vertical-cell h-100">
                                                                     <div class="product-item-title">
-                                                                        <h4>Special offer</h4>
+                                                                        <h4>@lang('Special offer')</h4>
                                                                     </div>
 
                                                                     <div class="row">
@@ -243,7 +243,7 @@
                                                                                             <span
                                                                                                 class="midl">Medlemspris</span><span
                                                                                                 class="price blue">kr
-                                                                                                {{$row->wholesalePrice}}</span>
+                                                                                             {{$row->wholesalePrice}}</span>
                                                                                         </li>
                                                                                     </ul>
                                                                                 </div>
@@ -260,7 +260,7 @@
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">Home and cooking</a>
+                                                data-bs-toggle="dropdown" aria-expanded="false">@lang('Home and cooking')</a>
                                             <ul class="dropdown-menu">
                                                 <div class="dropdown-menu-container">
                                                     <div class="container">
@@ -269,7 +269,7 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Home Decor</h4>
+                                                                            <h4>@lang('Home Decor')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8424002051549_S3043144_P30.jpg"
                                                                                     alt="">
@@ -287,7 +287,7 @@
 
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Kitchenware</h4>
+                                                                            <h4>@lang('Kitchenware')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8430852626196_00_WBG0.jpg"
                                                                                     alt="">
@@ -305,7 +305,7 @@
 
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Small Electrical appliances</h4>
+                                                                            <h4>@lang('Small Electrical appliances')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8414234746702_S0449645_P00.jpg"
                                                                                     alt="">
@@ -322,7 +322,7 @@
                                                                     </div>
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Storage and organisation</h4>
+                                                                            <h4>@lang('Storage and organisation')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8436589220553_R00.jpg"
                                                                                     alt="">
@@ -340,17 +340,17 @@
                                                                 </div>
 
                                                                 <div class="subcribe-form">
-                                                                    <h3>Subscribe with us</h3>
+                                                                    <h3>@lang('Subscribe with us')</h3>
                                                                     <form>
                                                                         <input type="email" class="form-control"
-                                                                            placeholder="Enter your email Address">
+                                                                            placeholder="@lang('Enter your email Address')">
                                                                     </form>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-5 col-lg-4">
                                                                 <div class="vertical-cell h-100">
                                                                     <div class="product-item-title">
-                                                                        <h4>Special offer</h4>
+                                                                        <h4>@lang('Special offer')</h4>
                                                                     </div>
                                                                     <div class="row">
                                                                         @foreach(get_special_products() as $row)
@@ -382,7 +382,7 @@
                                                                                 <div class="product-item-footer">
                                                                                     <ul class="nav">
                                                                                         <li class="text-center">
-                                                                                            <span>Normalpris</span><span
+                                                                                            <span>@lang('Normalpris')</span><span
                                                                                                 class="price">kr
                                                                                                 {{$row->retailPrice}}</span>
                                                                                         </li>
@@ -408,7 +408,7 @@
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">Health and personal care</a>
+                                                data-bs-toggle="dropdown" aria-expanded="false">@lang('Health and personal care')</a>
                                             <ul class="dropdown-menu">
                                                 <div class="dropdown-menu-container">
                                                     <div class="container">
@@ -417,7 +417,7 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Diet and nutrition</h4>
+                                                                            <h4>@lang('Diet and nutrition')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8437022569826_S6460357_P01.jpg"
                                                                                     alt="">
@@ -435,7 +435,7 @@
 
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Healthcare</h4>
+                                                                            <h4>@lang('Healthcare')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8425091200313_S05109565_P00.jpg"
                                                                                     alt="">
@@ -453,7 +453,7 @@
 
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Oral care</h4>
+                                                                            <h4>@lang('Oral care')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/4210201396888_S7141021_P00.jpg"
                                                                                     alt="">
@@ -470,7 +470,7 @@
                                                                     </div>
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Vitamins, minerals and supplements</h4>
+                                                                            <h4>@lang('Vitamins, minerals and supplements')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8414192312094_S6482150_P00.jpg"
                                                                                     alt="">
@@ -488,17 +488,17 @@
                                                                 </div>
 
                                                                 <div class="subcribe-form">
-                                                                    <h3>Subscribe with us</h3>
+                                                                    <h3>@lang('Subscribe with us')</h3>
                                                                     <form>
                                                                         <input type="email" class="form-control"
-                                                                            placeholder="Enter your email Address">
+                                                                            placeholder="@lang('Enter your email Address')">
                                                                     </form>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-5 col-lg-4">
                                                                 <div class="vertical-cell h-100">
                                                                     <div class="product-item-title">
-                                                                        <h4>Special offer</h4>
+                                                                        <h4>@lang('Special offer')</h4>
                                                                     </div>
                                                                     <div class="row">
                                                                         @foreach(get_special_products() as $row)
@@ -693,7 +693,7 @@
                                         </li> -->
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">Pet products</a>
+                                                data-bs-toggle="dropdown" aria-expanded="false">@lang('Pet products')</a>
                                             <ul class="dropdown-menu">
                                                 <div class="dropdown-menu-container">
                                                     <div class="container">
@@ -702,7 +702,7 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Cats</h4>
+                                                                            <h4>@lang('Cats')</h4>
                                                                             <figure>
                                                                                 <img src="https://www.bigbuy.eu/2380692-home/4018653907863_S7161395_P00.jpg"
                                                                                     alt="">
@@ -720,7 +720,7 @@
 
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Dogs</h4>
+                                                                            <h4>@lang('Dogs')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/0729849107656_S7139282_P01.jpg"
                                                                                     alt="">
@@ -738,7 +738,7 @@
 
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Horses</h4>
+                                                                            <h4>@lang('Horses')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/8414580005409_00_WBG2.jpg"
                                                                                     alt="">
@@ -755,7 +755,7 @@
                                                                     </div>
                                                                     <div class="col-sm-6 col-lg-3">
                                                                         <div class="special-item">
-                                                                            <h4>Small animals</h4>
+                                                                            <h4>@lang('Small animals')</h4>
                                                                             <figure>
                                                                                 <img src="https://cdnbigbuy.com/images/4011905630014_S7138865_P00.jpg"
                                                                                     alt="">
@@ -773,17 +773,17 @@
                                                                 </div>
 
                                                                 <div class="subcribe-form">
-                                                                    <h3>Subscribe with us</h3>
+                                                                    <h3>@lang('Subscribe with us')</h3>
                                                                     <form>
                                                                         <input type="email" class="form-control"
-                                                                            placeholder="Enter your email Address">
+                                                                            placeholder="@lang('Enter your email Address')">
                                                                     </form>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-5 col-lg-4">
                                                                 <div class="vertical-cell h-100">
                                                                     <div class="product-item-title">
-                                                                        <h4>Special offer</h4>
+                                                                        <h4>@lang('Special offer')</h4>
                                                                     </div>
                                                                     <div class="row">
                                                                         @foreach(get_special_products() as $row)
@@ -845,7 +845,7 @@
 
                             <div class="user-area d-flex ms-auto" style="@if(Request::is('products/view/*')) padding-right: 10px @endif">
                                 <div class="membership-btn">
-                                    <a href="{{route('compare')}}"><span>Membership</span></a>
+                                    <a href="{{route('compare')}}"><span>@lang('Membership')</span></a>
                                 </div>
 
                                 <ul class="nav">
@@ -853,7 +853,7 @@
                                     @if(Auth::check())
                                     <li class="user">
                                         <a href="{{route('dashboard')}}" >
-                                            Account
+                                            @lang('Account')
                                         </a>
                                     </li>
                                     <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}"
@@ -861,10 +861,10 @@
                                         @csrf
                                     </form>
                                     @else
-                                    <li class="user"><a href="{{route('login')}}">Login</a></li>
+                                    <li class="user"><a href="{{route('login')}}">@lang('Login')</a></li>
                                     @endif
                                     @endif
-                                    <li class="shopping-cart"><a href="#">Basket <p
+                                    <li class="shopping-cart"><a href="#">@lang('Basket') <p
                                                 class="cart_number">{{ Cart::getTotalQuantity()}}</p></a></li>
                                     <!-- <li class="shopping-cart"><a href="{{ route('cart.list') }}">Basket <p
                                                 class="cart_number">{{ Cart::getTotalQuantity()}}</p></a></li> -->
@@ -885,37 +885,36 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="special-link">
-                                        <h4 class="text-white">Categories</h4>
+                                        <h4 class="text-white">@lang('Categories')</h4>
                                         <ul>
-                                            <li><a href="{{route('products','makeup')}}">Make-Up</a></li>
-                                            <li><a href="{{route('products','body-care')}}">Body Care</a></li>
-                                            <li><a href="{{route('products','face-care')}}">Face Care</a></li>
-                                            <li><a href="{{route('products','babies-and-children')}}">Babies and
-                                                    Children </a></li>
+                                            <li><a href="{{route('products','makeup')}}">@lang('Make-Up')</a></li>
+                                            <li><a href="{{route('products','body-care')}}">@lang('Body Care')</a></li>
+                                            <li><a href="{{route('products','face-care')}}">@lang('Face Care')</a></li>
+                                            <li><a href="{{route('products','babies-and-children')}}">@lang('Babies and Children')</a></li>
 
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="special-link">
-                                        <h4 class="text-white">Products</h4>
+                                        <h4 class="text-white">@lang('Products')</h4>
                                         <ul>
-                                            <li><a href="/#new_products">New Products</a></li>
-                                            <li><a href="/#popular_products">Popular Products</a></li>
-                                            <li><a href="/#popular_products">Special Offers</a></li>
-                                            <li><a href="/#popular_products">Event Products</a></li>
+                                            <li><a href="/#new_products">@lang('New Products')</a></li>
+                                            <li><a href="/#popular_products">@lang('Popular Products')</a></li>
+                                            <li><a href="/#popular_products">@lang('Special Offers')</a></li>
+                                            <li><a href="/#popular_products">@lang('Event Products')</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="special-link">
-                                        <h4 class="text-white">Company</h4>
+                                        <h4 class="text-white">@lang('Company')</h4>
                                         <ul>
                                             <!-- <li><a href="#">About Us</a></li> -->
                                             <li><a href="{{route('faq')}}">FAQs</a></li>
-                                            <li><a href="{{route('terms')}}">Terms and Conditions</a></li>
-                                            <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
-                                            <li><a href="{{route('contact')}}">Contact Us</a></li>
+                                            <li><a href="{{route('terms')}}">@lang('Terms and Conditions')</a></li>
+                                            <li><a href="{{route('privacy')}}">@lang('Privacy Policy')</a></li>
+                                            <li><a href="{{route('contact')}}">@lang('Contact Us')</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -923,7 +922,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="footer-right">
-                                <h5 class="text-white">Follow us</h5>
+                                <h5 class="text-white">@lang('Follow us')</h5>
                                 <ul class="nav">
                                     <li>
                                         <a href="#">
@@ -987,7 +986,7 @@
                     </div>
 
                     <div class="copyright">
-                        <p class="text-white">&copy; {{date('Y')}} PlusDeal. All Rights Reserved</p>
+                        <p class="text-white">&copy; {{date('Y')}} PlusDeal. @lang('All Rights Reserved')</p>
                     </div>
                 </div><!-- //end .footer-area -->
             </div>
