@@ -226,6 +226,8 @@ class ProductController extends Controller
             }
         } catch (\Exception $e) {
             Log::error('Error occurred', ['exception' => $e]);
+
+            return redirect()->back()->with('error', $e->getMessage());
         }
     }
 
