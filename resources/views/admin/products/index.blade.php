@@ -192,7 +192,12 @@
     </div>
 </div>
 
+<?php
+echo '<pre>';
+print_r($data);
+echo '</pre>';
 
+    ?>
 
 <script>
 var token = $("meta[name='csrf-token']").attr("content");

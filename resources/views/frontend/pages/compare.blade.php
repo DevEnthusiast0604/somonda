@@ -5,7 +5,7 @@
         <div class="row mt-5">
             <div class="col-lg-6 mt-5">
                 <div class="footer-right">
-                    <h3>Membership (179kr / Mo)</h3>
+                    <h3>Membership (€19.95 / Mo)</h3>
                     <div>
                         <p><i class="ft-check"></i> Access to 1.000 products</p> 
                         <p><i class="ft-check"></i> 3-7 days shipping</p>

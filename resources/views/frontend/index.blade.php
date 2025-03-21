@@ -6,7 +6,7 @@
         <div class="banner-area">
             <div class="banner-info">
                 <h1>Luxery at a discounted price</h1>
-                <p>Become a Plus member and gain access to our products at a discounted price. Try first 7 days for free (hereafter 179 kr per month)</p>
+                <p>Become a Plus member and gain access to our products at a discounted price. Try first 7 days for free (hereafter €19.95 per month)</p>
                 <div class="shop-now-btn text-center">
                     <a href="#popular_products"><span>SHOP NOW</span></a>
                 </div>
@@ -236,12 +236,12 @@
                                 Deal' prices are for both members and non-members.
                                 Membership costs  
                                     <span style="text-decoration: underline">
-                                        <span style="color: #377E62;">179 kr</span>/month.
+                                        <span style="color: #377E62;">€19.95</span>/month.
                                     </span>
                                 </h2> <br>
                                 <p style="text-align: center; font-size: 15px; width: 80%; margin: auto;">
                                     If the membership is not terminated within the first 7 days, 
-                                    the membership automatically continues at 179 kr/month, 
+                                    the membership automatically continues at €19.95/month, 
                                     but it can always be terminated at the end of a month!<br><br>
                                     <b>The first 7 days are free!</b><br><br>
                                     Read more <a href="{{route('terms')}}"
