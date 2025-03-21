@@ -301,6 +301,8 @@ class ProductController extends Controller
             return Redirect::route('admin.products')->with('success', 'Product was added successfully!');  
         } catch (\Exception $e){
             Log::error('Error occurred', ['exception' => $e]);
+
+            return redirect()->back()->with('error', 'An error occurred while adding the product.');
         }
     }
 
