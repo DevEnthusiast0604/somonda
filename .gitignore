@@ -15,3 +15,4 @@ yarn-error.log
 *.zip
 *.mp4
 /config/services.php
+backup.sql
