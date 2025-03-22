@@ -95,7 +95,7 @@
 									<li><figure><img src="{{asset('assets/images/star.png')}}" alt=""></figure></li>
 									<li><figure><img src="{{asset('assets/images/star2.png')}}" alt=""></figure></li>
 								</ul>
-								<span>1785 reviews</span>
+								<span>1785 @lang('reviews')</span>
 							</div>
 
 							<form>
@@ -103,10 +103,10 @@
 									<input class="form-check-input" type="radio" name="flexRadioDefault" value="1"  id="flexRadioDefault1" checked>
 									<label class="form-check-label d-block" for="flexRadioDefault1">
 										<div class="add-to-cart-content">
-											<h5>Member price</h5>
-											<span>{{$data->wholesalePrice}} kr</span>
+											<h5>@lang('Member price')</h5>
+											<span>{{$data->wholesalePrice}} €</span>
 											<p>
-											PlusDeal prices only apply to members. The price for membership is €19.95/mo and continues automatically until terminated. Can be terminated at the end of a membership period. The first 7 days are free - read more about the benefits.
+												@lang('PlusDeal prices only apply to members. The price for membership is €19.95/mo and continues automatically until terminated. Can be terminated at the end of a membership period. The first 7 days are free - read more about the benefits.')
 											</p>
 
 											<ul class="nav">
@@ -114,19 +114,19 @@
 													<figure class="mx-auto">
 														<img src="{{asset('assets/images/Truck.png')}}" alt="">
 													</figure>
-													1-3 days Delivery
+													1-3 @lang('days Delivery')
 												</li>
 												<li>
 													<figure class="mx-auto">
 														<img src="{{asset('assets/images/Package.png')}}" alt="">
 													</figure>
-													Free delivery
+													@lang('Free delivery')
 												</li>
 												<li>
 													<figure class="mx-auto">
 														<img src="{{asset('assets/images/Percent.png')}}" alt="">
 													</figure>
-													Discounts
+													@lang('Discounts')
 												</li>
 											</ul>
 										</div>
@@ -137,8 +137,8 @@
 									<input class="form-check-input" type="radio" name="flexRadioDefault" value="0" id="flexRadioDefault2">
 									<label class="form-check-label d-block" for="flexRadioDefault2">
 										<div class="add-to-cart-content">
-											<h5>Normal price</h5>
-											<span class="mb-0">{{$data->retailPrice}} kr</span>
+											<h5>@lang('Normal price')</h5>
+											<span class="mb-0">{{$data->retailPrice}} €</span>
 										</div>
 									</label>
 								</div>
@@ -158,7 +158,7 @@
 									</div>
 									<div class="col-sm-7">
 										<div class="add-btn ms-auto">
-											<button class="text-white" href="#" type="submit" style="padding: 0 24px!important">Add to basket</button>
+											<button class="text-white" href="#" type="submit" style="padding: 0 24px!important">@lang('Add to basket')</button>
 										</div>
 									</div>
 									</form>
@@ -168,7 +168,7 @@
 					</div>
 					<div class="col-xl-3 about_content">
 						<div class="right-content">
-							<h5>About this item</h5>
+							<h5>@lang('About this item')</h5>
 							 {!! substr(strip_tags($data->description),0, 800) !!}...
 						</div>
 					</div>
@@ -182,15 +182,15 @@
 			<div class="tab-area mx-auto">
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item" role="presentation">
-						<button class="nav-link border-0 active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Product Description</button>
+						<button class="nav-link border-0 active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">@lang('Product Description')</button>
 					</li>
 
 					<li class="nav-item" role="presentation">
-						<button class="nav-link border-0" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Product details</button>
+						<button class="nav-link border-0" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">@lang('Product details')</button>
 					</li>
 
 					<li class="nav-item" role="presentation">
-						<button class="nav-link border-0" id="materials-tab" data-bs-toggle="tab" data-bs-target="#materials-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Ingredients</button>
+						<button class="nav-link border-0" id="materials-tab" data-bs-toggle="tab" data-bs-target="#materials-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">@lang('Ingredients')</button>
 					</li>
 				</ul>
 
@@ -224,10 +224,10 @@
 						
 					</div>
 					<div class="tab-pane fade" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
-						<p><strong>Stock: </strong>{{$data->stock}}</p>
-						<p><strong>Category: </strong>{{$data->category->name}}</p>
-						<p><strong>Size: </strong>{{$data->width}} × {{$data->height}} × {{$data->depth}}, {{$data->weight}} Kg </p>
-						<p><strong>Condition: </strong>{{$data->condition}}</p>
+						<p><strong>@lang('Stock'): </strong>{{$data->stock}}</p>
+						<p><strong>@lang('Category'): </strong>{{$data->category->name}}</p>
+						<p><strong>@lang('Size'): </strong>{{$data->width}} × {{$data->height}} × {{$data->depth}}, {{$data->weight}} Kg </p>
+						<p><strong>@lang('Condition'): </strong>{{$data->condition}}</p>
  
 					</div>
 					<div class="tab-pane fade" id="materials-tab-pane" role="tabpanel" aria-labelledby="materials-tab" tabindex="0">
@@ -243,7 +243,7 @@
 		<div class="container">
 			<div class="recommend-area">
 				<div class="heading">
-					<h2 class="text-center">Recommended for you</h2>
+					<h2 class="text-center">@lang('Recommended for you')</h2>
 					<!-- <p class="text-center">{{$new_products_count}} new products</p> -->
 				</div>
 
@@ -273,8 +273,8 @@
 									</div>
 									<div class="product-item-footer">
 										<ul class="nav">
-											<li class="text-center"><span>Normal price</span><span class="price">{{$row->retailPrice}} kr</span></li>
-											<li class="text-center border-0"><span class="midl">Member price</span><span class="price blue">{{$row->wholesalePrice}} kr</span></li>
+											<li class="text-center"><span>@label('Normal price')</span><span class="price">{{$row->retailPrice}} €</span></li>
+											<li class="text-center border-0"><span class="midl">@lang('Member price')</span><span class="price blue">{{$row->wholesalePrice}} €</span></li>
 										</ul>
 									</div>
 								</div>

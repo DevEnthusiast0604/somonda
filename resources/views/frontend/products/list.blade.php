@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav">
-                            <li class="active"><a href="#">All</a></li>
+                            <li class="active"><a href="#">@lang('All')</a></li>
                             @foreach($categories as $row)
                             <li><a href="{{route('products', $row->url)}}">{{$row->name}}</a></li>
                             @endforeach
@@ -21,17 +21,16 @@
                 <div class="col-md-8">
                     <div class="filter-dropdown">
                         <div class="heading">
-                            <h4>More Filter</h4>
+                            <h4>@lang('More Filter')</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="filter-dropdown">
                         <div class="dropdown">
-                            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Add
-                                Filter<span></span></a>
+                            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">@lang('Add Filter')<span></span></a>
                             <div class="dropdown-menu">
-                                <h5>Subcategories</h5>
+                                <h5>@lang('Subcategories')</h5>
                                 @foreach($subcategories as $row)
                                 <div class="filter-label clearfix">
                                     <form>
@@ -79,12 +78,12 @@
 
                             <ul>
                                 <li>
-                                    <span>Normalpris: {{$row->retailPrice}} kr</span>
+                                    <span>Normalpris: {{$row->retailPrice}} €</span>
                                     <span class="text-end text-red right">-{{number_format(($row->retailPrice - $row->wholesalePrice)*100/$row->retailPrice)}}%</span>
                                 </li>
                                 <li>
-                                    <span class="text-bold">Medlemspris:</span>
-                                    <span class="text-end text-bold right">{{$row->wholesalePrice}} kr</span>
+                                    <span class="text-bold">@lang('Medlemspris'):</span>
+                                    <span class="text-end text-bold right">{{$row->wholesalePrice}} €</span>
                                 </li>
                             </ul>
                         </div>

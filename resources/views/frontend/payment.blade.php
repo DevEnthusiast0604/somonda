@@ -65,11 +65,11 @@ LONDON WC2H 9JQ | Rebel Monkey Marketing Ltd Co no. 14009110</strong> -->
                                         <div class="px-3">
                                             <h5 class="px-3">{{$row->name}}</h5>
                                             @if(app()->getLocale() == 'sv')
-                                            <span class="px-3">{{$row->attributes->se_price}} kr</span>
+                                            <span class="px-3">{{$row->attributes->se_price}} €</span>
                                             @elseif(app()->getLocale() == 'no')
-                                            <span class="px-3">{{$row->attributes->se_price}} kr</span>
+                                            <span class="px-3">{{$row->attributes->se_price}} €</span>
                                             @else
-                                            <span class="px-3">{{$row->price}} kr</span>
+                                            <span class="px-3">{{$row->price}} €</span>
                                             @endif
                                             <span>Quantity: {{$row->quantity}}</span>
                                         </div>
@@ -86,19 +86,19 @@ LONDON WC2H 9JQ | Rebel Monkey Marketing Ltd Co no. 14009110</strong> -->
                             <div class="bottom">
                                 <span>@lang('delivery')</span>  
                                 @if(app()->getLocale() == 'sv')
-                                <span class="text-end">0 kr</span>
+                                <span class="text-end">0 €</span>
                                 @else
-                                <span class="text-end">0 kr</span>
+                                <span class="text-end">0 €</span>
                                 @endif
                             </div>
                             <div class="bottom">
                                 <span>@lang('total')</span>  
                                 @if(app()->getLocale() == 'sv')
-                                <span class="text-end">{{ getseTotal() }} kr</span>
+                                <span class="text-end">{{ getseTotal() }} €</span>
                                 @elseif(app()->getLocale() == 'no')
-                                <span class="text-end">{{ getnoTotal() }} kr</span>
+                                <span class="text-end">{{ getnoTotal() }} €</span>
                                 @else
-                                <span class="text-end">{{ Cart::getTotal()}} kr</span>
+                                <span class="text-end">{{ Cart::getTotal()}} €</span>
                                 @endif
                             </div>
                         </div>
@@ -110,7 +110,7 @@ LONDON WC2H 9JQ | Rebel Monkey Marketing Ltd Co no. 14009110</strong> -->
                                 <div class="item">
                                     <div class="d-flex">
                                         <div class="px-3">
-                                            <h5>On your bill, charges may appear as</h5>
+                                            <h5>@lang('On your bill, charges may appear as')</h5>
                                             <ul>
                                                 <li> plusdeal.fr 4402895813060</li>
                                                 <li> trial*plusdeal.fr 4402895813060</li>

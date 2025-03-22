@@ -235,7 +235,7 @@ header {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
-	color: #1C75BC;
+	color: #69b783;
 	margin-bottom: 4px;
 }
 .product-item-content span {
@@ -268,7 +268,7 @@ header {
 	margin-bottom: 3px;
 }
 .product-item-footer ul li span.price.blue {
-	color: #1C75BC;
+	color: #69b783;
 }
 .product-item-footer ul li span.midl {
 	/* background: url('/assets/images/PlusCircle.png') no-repeat right center; */
@@ -1071,7 +1071,7 @@ header {
 .product-item.lg .product-item-content p {
 	font-size: 24px;
 	line-height: 28px;
-	color: #1C75BC;
+	color: #69b783;
 	margin-bottom: 12px;
 }
 

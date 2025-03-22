@@ -5,12 +5,12 @@
         <div class="row mt-5">
             <div class="col-lg-6 mt-5">
                 <div class="footer-right">
-                    <h3>Membership (€19.95 / Mo)</h3>
+                    <h3>@lang('Membership') (€19.95 / Mo)</h3>
                     <div>
-                        <p><i class="ft-check"></i> Access to 1.000 products</p> 
-                        <p><i class="ft-check"></i> 3-7 days shipping</p>
-                        <p><i class="ft-check"></i>Free shipping</p>
-                        <p><i class="ft-check"></i> Free returns</p>
+                        <p><i class="ft-check"></i> @lang('Access to 1.000 products')</p> 
+                        <p><i class="ft-check"></i> 3-7 @lang('days shipping')</p>
+                        <p><i class="ft-check"></i>@lang('Free shipping')</p>
+                        <p><i class="ft-check"></i> @lang('Free returns')</p>
                     </div>
                 </div>
             </div>

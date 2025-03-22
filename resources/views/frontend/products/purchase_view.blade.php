@@ -77,11 +77,11 @@
                                 <span class="sub-text">@lang('your_total')</span>
                                 <span>
                                     @if(app()->getLocale() == 'sv')
-                                    {{number_format($data->wholesalePrice * sek_rate())}} Kr
+                                    {{number_format($data->wholesalePrice * sek_rate())}} €
                                     @elseif(app()->getLocale() == 'no')
-                                    {{number_format($data->wholesalePrice * nok_rate())}} Kr
+                                    {{number_format($data->wholesalePrice * nok_rate())}} €
                                     @else
-                                    kr{{$data->wholesalePrice}}
+                                        €{{$data->wholesalePrice}}
                                     @endif
                                 </span>
                             </p>
@@ -405,7 +405,7 @@
         <div class="container">
             <div class="row py-5 align-items-center">
                 <div class="col-12 col-md-12 text-center">
-                    <h2>&copy; {{date('Y')}} PlusDeal. All Rights Reserved</h2>
+                    <h2>&copy; {{date('Y')}} PlusDeal. @lang('All Rights Reserved')</h2>
                     <p class="mb-0 pt-2 small">
                          @lang('purchase_footer')
                     </p>

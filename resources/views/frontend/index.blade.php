@@ -102,11 +102,11 @@
                         </div>
                         <div class="product-item-footer">
                             <ul class="nav">
-                                <li class="text-center"><span>Normal Price</span><span class="price"> kr
+                                <li class="text-center"><span>@lang('Normal Price')</span><span class="price"> €
                                         {{$row->retailPrice}}</span>
                                 </li>
-                                <li class="text-center border-0"><span class="midl">Membership Price</span><span
-                                        class="price blue">kr {{$row->wholesalePrice}}</span></li>
+                                <li class="text-center border-0"><span class="midl">@lang('Membership Price')</span><span
+                                        class="price blue">€ {{$row->wholesalePrice}}</span></li>
                             </ul>
                         </div>
                     </div>
@@ -140,11 +140,11 @@
                                 </div>
                                 <div class="product-item-footer">
                                     <ul class="nav">
-                                        <li class="text-center"><span>Normalpris</span><span class="price">kr
+                                        <li class="text-center"><span>@lang('Normalpris')</span><span class="price">€
                                                 {{$row->retailPrice}}</span>
                                         </li>
-                                        <li class="text-center border-0"><span class="midl">Medlemspris</span><span
-                                                class="price blue">kr {{$row->wholesalePrice}}</span></li>
+                                        <li class="text-center border-0"><span class="midl">@lang('Medlemspris')</span><span
+                                                class="price blue">€ {{$row->wholesalePrice}}</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -190,11 +190,11 @@
                     </div>
                     <div class="product-item-footer">
                         <ul class="nav">
-                            <li class="text-center"><span>Normalpris</span><span class="price">kr
+                            <li class="text-center"><span>@lang('Normalpris')</span><span class="price">€
                                     {{$row->retailPrice}}</span>
                             </li>
-                            <li class="text-center border-0"><span class="midl">Medlemspris</span><span
-                                    class="price blue">kr {{$row->wholesalePrice}}</span></li>
+                            <li class="text-center border-0"><span class="midl">@lang('Medlemspris')</span><span
+                                    class="price blue">€ {{$row->wholesalePrice}}</span></li>
                         </ul>
                     </div>
                 </div>

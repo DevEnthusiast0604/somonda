@@ -22,11 +22,11 @@
                                             </p>
                                             <p>
                                             @if(app()->getLocale() == 'sv')
-                                            <span class="text-end">{{ getseTotal() }} kr</span>
+                                            <span class="text-end">{{ getseTotal() }} €</span>
                                             @elseif(app()->getLocale() == 'no')
-                                            <span class="text-end">{{ getnoTotal() }} kr</span>
+                                            <span class="text-end">{{ getnoTotal() }} €</span>
                                             @else
-                                            <span class="text-end">{{ Cart::getTotal() }} kr</span>
+                                            <span class="text-end">{{ Cart::getTotal() }} €</span>
                                             @endif
                                             </p>
                                         </div>
@@ -54,11 +54,11 @@
                                                     <div class="product_amount">
                                                         <p>
                                                             @if(app()->getLocale() == 'sv')
-                                                            <span class="px-3">{{$row->attributes->se_price}} kr</span>
+                                                            <span class="px-3">{{$row->attributes->se_price}} €</span>
                                                             @elseif(app()->getLocale() == 'no')
-                                                            <span class="px-3">{{$row->attributes->no_price}} kr</span>
+                                                            <span class="px-3">{{$row->attributes->no_price}} €</span>
                                                             @else
-                                                            <span class="px-3">{{$row->price}} kr</span>
+                                                            <span class="px-3">{{$row->price}} €</span>
                                                             @endif
                                                         </p>
                                                     </div>
@@ -78,11 +78,11 @@
                                                         <p>@lang('subtotal')</p>
                                                         <p>
                                                             @if(app()->getLocale() == 'sv')
-                                                            <span class="text-end">{{ getseTotal() }} kr</span>
+                                                            <span class="text-end">{{ getseTotal() }} €</span>
                                                             @elseif(app()->getLocale() == 'no')
-                                                            <span class="text-end">{{ getnoTotal() }} kr</span>
+                                                            <span class="text-end">{{ getnoTotal() }} €</span>
                                                             @else
-                                                            <span class="text-end">{{ Cart::getTotal() }} kr</span>
+                                                            <span class="text-end">{{ Cart::getTotal() }} €</span>
                                                             @endif
                                                         </p>
                                                     </div>
@@ -91,9 +91,9 @@
                                                         <p>@lang('delivery')</p>
                                                         <p>
                                                             @if(app()->getLocale() == 'sv' || app()->getLocale() == 'no')
-                                                            <span class="text-end">0 kr</span>
+                                                            <span class="text-end">0 €</span>
                                                             @else
-                                                            <span class="text-end">0 kr</span>
+                                                            <span class="text-end">0 €</span>
                                                             @endif
                                                         </p>
                                                     </div>
@@ -105,11 +105,11 @@
                                                         </div>
                                                         <p>
                                                             @if(app()->getLocale() == 'sv')
-                                                            <span class="text-end">{{ getseTotal() }} kr</span>
+                                                            <span class="text-end">{{ getseTotal() }} €</span>
                                                             @elseif(app()->getLocale() == 'no')
-                                                            <span class="text-end">{{getnoTotal()}} kr</span>
+                                                            <span class="text-end">{{getnoTotal()}} €</span>
                                                             @else
-                                                            <span class="text-end">{{ Cart::getTotal() }} kr</span>
+                                                            <span class="text-end">{{ Cart::getTotal() }} €</span>
                                                             @endif
                                                         </p>
                                                     </div>
@@ -234,11 +234,11 @@
                                 </div>
                                 <div class="product_amount">
                                     @if(app()->getLocale() == 'sv')
-                                    <p>{{$row->attributes->se_price}} kr</p>
+                                    <p>{{$row->attributes->se_price}} €</p>
                                     @elseif(app()->getLocale() == 'no')
-                                    <p>{{$row->attributes->no_price}} kr</p>
+                                    <p>{{$row->attributes->no_price}} €</p>
                                     @else
-                                    <p>{{$row->price}} kr</p>
+                                    <p>{{$row->price}} €</p>
                                     @endif
                                 </div>
                             </div>
@@ -254,11 +254,11 @@
                                     <p>@lang('subtotal')</p>
                                     <p>
                                         @if(app()->getLocale() == 'sv')
-                                        {{ getseTotal() }} kr
+                                        {{ getseTotal() }} €
                                         @elseif(app()->getLocale() == 'no')
-                                        {{ getnoTotal() }} kr
+                                        {{ getnoTotal() }} €
                                         @else
-                                        {{ Cart::getTotal() }} kr
+                                        {{ Cart::getTotal() }} €
                                         @endif
                                     </p>
                                 </div>
@@ -266,9 +266,9 @@
                                     <p>@lang('delivery')</p>
                                     <p>
                                         @if(app()->getLocale() == 'sv' || app()->getLocale() == 'no')
-                                        <span class="text-end">0 kr</span>
+                                        <span class="text-end">0 €</span>
                                         @else
-                                        <span class="text-end">0 kr</span>
+                                        <span class="text-end">0 €</span>
                                         @endif</p>
                                     </div>
                                 <div class="total_wrapper d-flex align-items-center justify-content-between my-3">
@@ -278,11 +278,11 @@
                                     </div>
                                     <p>
                                     @if(app()->getLocale() == 'sv')
-                                    <span class="text-end">{{ getseTotal() }} kr</span>
+                                    <span class="text-end">{{ getseTotal() }} €</span>
                                     @elseif(app()->getLocale() == 'no')
-                                    <span class="text-end">{{ getnoTotal() }} kr</span>
+                                    <span class="text-end">{{ getnoTotal() }} €</span>
                                     @else
-                                    <span class="text-end">{{ Cart::getTotal() }} kr</span>
+                                    <span class="text-end">{{ Cart::getTotal() }} €</span>
                                     @endif
                                     </p>
                                 </div>

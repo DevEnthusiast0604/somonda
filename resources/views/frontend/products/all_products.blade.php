@@ -8,8 +8,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav">
-                            <li class="active"><a href="#">All Products</a></li>
-                            <li><a href="#">Total {{$count}} products</a></li>
+                            <li class="active"><a href="#">@lang('All Products')</a></li>
+                            <li><a href="#">@lang('Total') {{$count}} @lang('products')</a></li>
                         </ul>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                 <div class="col-md-3 ">
                     <form>
                         <div class="form-input">
-                            <input type="text" class="form-control" placeholder="Search for Product">
+                            <input type="text" class="form-control" placeholder="@lang('Search for Product')">
                         </div>
                     </form>
                 </div>
@@ -52,11 +52,11 @@
                             </div>
                             <div class="product-item-footer">
                                 <ul class="nav">
-                                    <li class="text-center"><span>Normal Price</span><span class="price"> 
-                                            {{$row->retailPrice}} kr</span>
+                                    <li class="text-center"><span>@lang('Normal Price')</span><span class="price"> 
+                                            {{$row->retailPrice}} €</span>
                                     </li>
-                                    <li class="text-center border-0"><span class="midl">Membership Price</span><span
-                                            class="price blue">{{$row->wholesalePrice}} kr</span></li>
+                                    <li class="text-center border-0"><span class="midl">@lang('Membership Price')</span><span
+                                            class="price blue">{{$row->wholesalePrice}} €</span></li>
                                 </ul>
                             </div>
                         </div>

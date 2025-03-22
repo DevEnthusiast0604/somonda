@@ -85,7 +85,7 @@
                                 <form class="d-none d-lg-flex" role="search">
                                     <input class="form-control border-0" type="search" placeholder="Search..."
                                         aria-label="Search">
-                                    <button class="btn" type="submit">Search</button>
+                                    <button class="btn" type="submit">@lang('Search')</button>
                                 </form>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <div class="membership-btn">
@@ -94,20 +94,20 @@
                                     <form class="d-flex d-lg-none" role="search">
                                         <input class="form-control border-0" type="search" placeholder="Search..."
                                             aria-label="Search">
-                                        <button class="btn" type="submit">Search</button>
+                                        <button class="btn" type="submit">@lang('Search')</button>
                                     </form>
                                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#" >Perfumes | Cosmetics</a>
+                                            <a class="nav-link" href="#" >@lang('Perfumes') | @lang('Cosmetics')</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Health | Beauty</a>
+                                            <a class="nav-link" href="#">@lang('Health') | @lang('Beauty')</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Toys | Fancy Dress</a>
+                                            <a class="nav-link" href="#">@lang('Toys') | @lang('Fancy Dress')</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Computers | Electronics</a>
+                                            <a class="nav-link" href="#">@lang('Computers') | @lang('Electronics')</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -120,7 +120,7 @@
                                     @if(Auth::check())
                                     <li class="user login_icon_hide">
                                         <a href="{{route('dashboard')}}">
-                                            Account
+                                            @lang('Account')
                                         </a>
                                     </li>
                                     <form id="logout-form" action="{{ route('logout',app()->getLocale()) }}"
@@ -128,7 +128,7 @@
                                         @csrf
                                     </form>
                                     @else
-                                    <li class="user login_icon_hide"><a href="{{route('login')}}">Login</a></li>
+                                    <li class="user login_icon_hide"><a href="{{route('login')}}">@lang('Login')</a></li>
                                     @endif
                                     <li class="shopping-cart"><a href="#">@lang('your_basket') <p class="cart_number">
                                                 {{ Cart::getTotalQuantity()}}</p></a></li>
@@ -217,14 +217,14 @@
                         </div>
                         <div class="price_product">
                             @if(app()->getLocale() == 'sv')
-                            <div class="main_price"> {{$data->se_wholesalePrice}} kr</div>
-                            <div class="compare_at_price">{{$data->se_retailPrice}} kr</div>
+                            <div class="main_price"> {{$data->se_wholesalePrice}} €</div>
+                            <div class="compare_at_price">{{$data->se_retailPrice}} €</div>
                             @elseif(app()->getLocale() == 'no')
-                            <div class="main_price">{{$data->no_wholesalePrice}} kr</div>
-                            <div class="compare_at_price">{{$data->no_retailPrice}} kr</div>
+                            <div class="main_price">{{$data->no_wholesalePrice}} €</div>
+                            <div class="compare_at_price">{{$data->no_retailPrice}} €</div>
                             @else
-                            <div class="main_price">{{$data->wholesalePrice}} kr</div>
-                            <div class="compare_at_price">{{$data->retailPrice}} kr</div>
+                            <div class="main_price">{{$data->wholesalePrice}} €</div>
+                            <div class="compare_at_price">{{$data->retailPrice}} €</div>
                             @endif
 
                             <div class="save_label label_sales"><img class="lazy"
@@ -944,36 +944,35 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="special-link">
-                                        <h4 class="text-white">Categories</h4>
+                                        <h4 class="text-white">@lang('Categories')</h4>
                                         <ul>
-                                            <li><a href="{{route('products','makeup')}}">Make-Up</a></li>
-                                            <li><a href="{{route('products','body-care')}}">Body Care</a></li>
-                                            <li><a href="{{route('products','face-care')}}">Face Care</a></li>
-                                            <li><a href="{{route('products','babies-and-children')}}">Babies and
-                                                    Children </a></li>
+                                            <li><a href="{{route('products','makeup')}}">@lang('Make-Up')</a></li>
+                                            <li><a href="{{route('products','body-care')}}">@lang('Body Care')</a></li>
+                                            <li><a href="{{route('products','face-care')}}">@lang('Face Care')</a></li>
+                                            <li><a href="{{route('products','babies-and-children')}}">@lang('Babies and Children') </a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="special-link">
-                                        <h4 class="text-white">Products</h4>
+                                        <h4 class="text-white">@lang('Products')</h4>
                                         <ul>
-                                            <li><a href="/#new_products">New Products</a></li>
-                                            <li><a href="/#popular_products">Popular Products</a></li>
-                                            <li><a href="/#popular_products">Special Offers</a></li>
-                                            <li><a href="/#popular_products">Event Products</a></li>
+                                            <li><a href="/#new_products">@lang('New Products')</a></li>
+                                            <li><a href="/#popular_products">@lang('Popular Products')</a></li>
+                                            <li><a href="/#popular_products">@lang('Special Offers')</a></li>
+                                            <li><a href="/#popular_products">@lang('Event Products')</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-4">
                                     <div class="special-link">
-                                        <h4 class="text-white">Company</h4>
+                                        <h4 class="text-white">@lang('Company')</h4>
                                         <ul>
                                             <!-- <li><a href="#">About Us</a></li> -->
                                             <li><a href="{{route('faq')}}">FAQs</a></li>
-                                            <li><a href="{{route('terms')}}">Terms and Conditions</a></li>
-                                            <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
-                                            <li><a href="{{route('contact')}}">Contact Us</a></li>
+                                            <li><a href="{{route('terms')}}">@lang('Terms and Conditions')</a></li>
+                                            <li><a href="{{route('privacy')}}">@lang('Privacy Policy')</a></li>
+                                            <li><a href="{{route('contact')}}">@lang('Contact Us')</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -981,7 +980,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="footer-right">
-                                <h5 class="text-white">Follow us</h5>
+                                <h5 class="text-white">@lang('Follow us')</h5>
                                 <ul class="nav">
                                     <li>
                                         <a href="#">
@@ -1045,7 +1044,7 @@
                     </div>
 
                     <div class="copyright">
-                        <p class="text-white">&copy; {{date('Y')}} PlusDeal. All Rights Reserved</p>
+                        <p class="text-white">&copy; {{date('Y')}} PlusDeal. @lang('All Rights Reserved')</p>
                     </div>
                 </div><!-- //end .footer-area -->
             </div>
@@ -1067,14 +1066,14 @@
                         <div class="product_title">{{$product['name']}}</div>
                         <div class="product_price">
                             @if(app()->getLocale() == 'sv')
-                            <div class="main">{{$data->se_wholesalePrice}} Kr</div>
-                            <div class="compare">{{$data->se_retailPrice}} Kr</div>
+                            <div class="main">{{$data->se_wholesalePrice}} €</div>
+                            <div class="compare">{{$data->se_retailPrice}} €</div>
                             @elseif(app()->getLocale() == 'no')
-                            <div class="main">{{$data->no_wholesalePrice}} Kr</div>
-                            <div class="compare">{{$data->no_retailPrice}} Kr</div>
+                            <div class="main">{{$data->no_wholesalePrice}} €</div>
+                            <div class="compare">{{$data->no_retailPrice}} €</div>
                             @else
-                            <div class="main">kr {{$data->wholesalePrice}}</div>
-                            <div class="compare">kr {{$data->retailPrice}}</div>
+                            <div class="main">€ {{$data->wholesalePrice}}</div>
+                            <div class="compare">€ {{$data->retailPrice}}</div>
                             @endif
 
                             <div class="sticky_save_label label_sales"><img

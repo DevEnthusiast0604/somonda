@@ -49,7 +49,7 @@
                             <button type="submit">@lang('Register')</button>
                             
                             <div class="text-center mt-4 mb-2">
-                                <span>If You already have an account, <a href="{{route('login')}}" style="color: #1c75bc;font-weight: 600;">Login now</a></span>
+                                <span>@lang('If You already have an account,') <a href="{{route('login')}}" style="color: #1c75bc;font-weight: 600;">@lang('Login now')</a></span>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-center m-auto">
@@ -83,18 +83,18 @@
                                         <div class="px-3 pt-2">
                                             <h5 class="px-3">@lang('membership')</h5>
                                             @if(app()->getLocale() == 'sv')
-                                            <span class="px-3">{{number_format($sek_rate * 19.95)}} Kr / Mo</span>
+                                            <span class="px-3">{{number_format($sek_rate * 19.95)}} € / Mo</span>
                                             @elseif(app()->getLocale() == 'no')
-                                            <span class="px-3">{{number_format($nok_rate * 19.95)}} Kr / Mo</span>
+                                            <span class="px-3">{{number_format($nok_rate * 19.95)}} € / Mo</span>
                                             @else
-                                            <span class="px-3">kr 19.95 / Mo</span>
+                                            <span class="px-3">€ 19.95 / Mo</span>
                                             @endif
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="bottom_benefit">
-                                <span>@lang('membership_benefit') <a href="{{route('terms')}}" style="color: #1c75bc;font-weight: 600;">here</a></span>  
+                                <span>@lang('membership_benefit') <a href="{{route('terms')}}" style="color: #1c75bc;font-weight: 600;">@lang('here')</a></span>  
                             </div>
                         </div>
                     </div>

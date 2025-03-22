@@ -6,7 +6,7 @@
             <div class="col-lg-4 mt-5">
                 
                 <div class="footer-right">
-                    <h3>Get in touch</h3>
+                    <h3>@lang('Get in touch')</h3>
                     <div>
                         <p><i class="ft-home"></i> CC EUROPE LTD,  Co no. 15652312</p> 
                         <p><i class="ft-map-pin"></i>   128 City Road <br>   London EC1V 2NX <br> UNITED KINGDOM</p> 

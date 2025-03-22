@@ -45,7 +45,7 @@
                         <div class="content_coming_soon">
                             <a href="{{route('login')}}"><img src="{{asset('assets/images/logo.png')}}" width="50%" alt="" /></a>
                             <img class="sign" src="{{asset('assets/images/sign.png')}}" alt="" />
-                            <p>We are still working on it!</p>
+                            <p>@lang('We are still working on it!')</p>
                             <div id="countdown_dashboard" class="clearfix" data-day="{{date('d', strtotime(is_maintenance()->period))}}" data-month="{{date('m', strtotime(is_maintenance()->period))}}"
                                 data-year="{{date('Y', strtotime(is_maintenance()->period))}}"></div>
                             <form method="post" action="{{route('user.subscribe')}}">

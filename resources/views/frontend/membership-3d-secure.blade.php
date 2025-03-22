@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col">
-                    <h5>Need help? Contact us for everything from plans to refunds</h5>
+                    <h5>@lang('Need help? Contact us for everything from plans to refunds')</h5>
                 </div>
                 <div class="col-12 col-md-auto">
                     <a href="mailto:support@plusdeal.fr">support@plusdeal.fr</a>
@@ -99,7 +99,7 @@
 
                         <div class="row align-items-center d-none d-sm-flex">
                             <div class="col-auto fw-bold py-2">@lang('premium')</div>
-                            <div class="col text-end fw-bold">kr65 @lang('30_days')</div>
+                            <div class="col text-end fw-bold">€65 @lang('30_days')</div>
                         </div>
 
                         <hr class="d-none d-sm-block">
@@ -110,13 +110,13 @@
                             </div>
                             <div class="col-auto">
                                 <h4 class="fw-bold text-success text-decoration-underline mb-0">
-                                        2.95kr
+                                        2.95€
                                 </h4>
                             </div>
                         </div>
                         <div class="row d-none d-sm-block">
                             <div class="col text-muted">@lang('after_3days'):
-                                kr65
+                                €65
                             </div>
                         </div>
                         <hr class="d-none d-sm-block">

@@ -50,20 +50,20 @@
                                                 <span class="visually-hidden">@lang('membership_price')</span>
                                                 <span>
                                                 @if(app()->getLocale() == 'sv')
-                                                    {{$row->attributes->se_price}} Kr
+                                                    {{$row->attributes->se_price}} €
                                                 @elseif(app()->getLocale() == 'no')
-                                                    {{$row->attributes->no_price}} Kr
+                                                    {{$row->attributes->no_price}} €
                                                 @else
-                                                    kr {{$row->price}}
+                                                    € {{$row->price}}
                                                 @endif
                                                 </span>
                                                 <span class="visually-hidden">@lang('normal_price')</span>
                                                 <span class="light-text">
                                                     <del>
                                                         @if(app()->getLocale() == 'sv')
-                                                        <span class="text-end">{{ $row->attributes->se_normal_price }} Kr</span>
+                                                        <span class="text-end">{{ $row->attributes->se_normal_price }} €</span>
                                                         @elseif(app()->getLocale() == 'no')
-                                                        <span class="text-end">{{ $row->attributes->se_normal_price }} Kr</span>
+                                                        <span class="text-end">{{ $row->attributes->se_normal_price }} €</span>
                                                         @else
                                                         <span class="text-end">kr {{ $row->attributes->normal_price }}</span>
                                                         @endif
@@ -100,9 +100,9 @@
                                         <span class="visually-hidden">@lang('membership_price')</span>
                                         <h4>
                                             @if(app()->getLocale() == 'sv')
-                                            <span class="text-end">{{  $row->quantity * $row->attributes->se_price }} Kr</span>
+                                            <span class="text-end">{{  $row->quantity * $row->attributes->se_price }} €</span>
                                             @elseif(app()->getLocale() == 'no')
-                                            <span class="text-end">{{ $row->quantity * $row->attributes->no_price }} Kr</span>
+                                            <span class="text-end">{{ $row->quantity * $row->attributes->no_price }} €</span>
                                             @else
                                             <span class="text-end"> kr {{ $row->price * $row->quantity }}</span>
                                             @endif
@@ -111,11 +111,11 @@
                                         <span class="light-text">
                                             <del>
                                                 @if(app()->getLocale() == 'sv')
-                                                <span class="text-end">{{  $row->quantity * $row->attributes->se_normal_price  }} Kr</span>
+                                                <span class="text-end">{{  $row->quantity * $row->attributes->se_normal_price  }} €</span>
                                                 @elseif(app()->getLocale() == 'no')
-                                                <span class="text-end">{{ $row->quantity * $row->attributes->no_normal_price }} Kr</span>
+                                                <span class="text-end">{{ $row->quantity * $row->attributes->no_normal_price }} €</span>
                                                 @else
-                                                <span class="text-end">kr {{ $row->attributes->normal_price * $row->quantity }}</span>
+                                                <span class="text-end">€ {{ $row->attributes->normal_price * $row->quantity }}</span>
                                                 @endif
                                             </del>
                                         </span>
@@ -129,7 +129,7 @@
                 <div class="col-lg-4">
                     <div class="card p-3 py-4">
                         <span class="mb-1">
-                            You are eligible for free shipping!
+                            @lang('You are eligible for free shipping!')
                         </span>
                         <hr class="m-0 hr-class">
                     </div>
@@ -139,11 +139,11 @@
                             <p>
                                 <span>@lang('total')</span>
                                 @if(app()->getLocale() == 'sv')
-                                <span class="text-end">{{ getseTotal() }} Kr</span>
+                                <span class="text-end">{{ getseTotal() }} €</span>
                                 @elseif(app()->getLocale() == 'no')
-                                    <span class="text-end">{{ getnoTotal() }} Kr</span>
+                                    <span class="text-end">{{ getnoTotal() }} €</span>
                                 @else
-                                <span class="text-end">kr {{ number_format((Cart::getTotal()), 2) }}</span>
+                                <span class="text-end">€ {{ number_format((Cart::getTotal()), 2) }}</span>
                                 @endif
                             </p>
                         </div>
