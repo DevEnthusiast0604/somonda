@@ -47,28 +47,28 @@
                                 <p class="text-secondary pr-2">
                                     <del>
                                         @if(app()->getLocale() == 'sv')
-                                        <span class="text-end">{{ $row->attributes->se_normal_price }} kr</span>
+                                        <span class="text-end">{{ $row->attributes->se_normal_price }} €</span>
                                         @elseif(app()->getLocale() == 'no')
-                                        <span class="text-end">{{ $row->attributes->no_normal_price }} kr</span>
+                                        <span class="text-end">{{ $row->attributes->no_normal_price }} €</span>
                                         @else
-                                        <span class="text-end">{{ $row->attributes->normal_price }} kr</span>
+                                        <span class="text-end">{{ $row->attributes->normal_price }} €</span>
                                         @endif
                                     </del> 
                                     @if(app()->getLocale() == 'sv')
-                                    <span class="text-end">{{  $row->attributes->se_price }} kr</span>
+                                    <span class="text-end">{{  $row->attributes->se_price }} €</span>
                                     @elseif(app()->getLocale() == 'no')
-                                    <span class="text-end">{{ $row->attributes->no_price }} kr</span>
+                                    <span class="text-end">{{ $row->attributes->no_price }} €</span>
                                     @else
-                                    <span class="text-end">{{ $row->price }} kr</span>
+                                    <span class="text-end">{{ $row->price }} €</span>
                                     @endif
                                 </p>
                                 <p class="text-success pr-2"> @lang('save')
                                     @if(app()->getLocale() == 'sv')
-                                    <span class="text-end">{{ $row->quantity * ($row->attributes->se_normal_price - $row->attributes->se_price) }} kr</span>
+                                    <span class="text-end">{{ $row->quantity * ($row->attributes->se_normal_price - $row->attributes->se_price) }} €</span>
                                     @elseif(app()->getLocale() == 'no')
-                                    <span class="text-end">{{ $row->quantity * ($row->attributes->no_normal_price - $row->attributes->no_price) }} kr</span>
+                                    <span class="text-end">{{ $row->quantity * ($row->attributes->no_normal_price - $row->attributes->no_price) }} €</span>
                                     @else
-                                    <span class="text-end">{{($row->attributes->normal_price - $row->price) * $row->quantity}} kr</span>
+                                    <span class="text-end">{{($row->attributes->normal_price - $row->price) * $row->quantity}} €</span>
                                     @endif    
                                 </p>
 
@@ -95,11 +95,11 @@
                 @else
                 <a href="{{route('checkout')}}" class="btn go_to_payment">@lang('go_to_payment') 
                 @if(app()->getLocale() == 'sv')
-                 {{ getseTotal() }} kr
+                 {{ getseTotal() }} €
                 @elseif(app()->getLocale() == 'no')
-                {{ getnoTotal() }} kr
+                {{ getnoTotal() }} €
                 @else
-                  {{ Cart::getTotal() }} kr
+                  {{ Cart::getTotal() }} €
                 @endif
                 </a>
                 @endif

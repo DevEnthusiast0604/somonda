@@ -235,14 +235,14 @@
                                                                                     <ul class="nav">
                                                                                         <li class="text-center">
                                                                                             <span>Normalpris</span><span
-                                                                                                class="price">kr
+                                                                                                class="price">€
                                                                                                 {{$row->retailPrice}}</span>
                                                                                         </li>
                                                                                         <li
                                                                                             class="text-center border-0">
                                                                                             <span
                                                                                                 class="midl">Medlemspris</span><span
-                                                                                                class="price blue">kr
+                                                                                                class="price blue">€
                                                                                              {{$row->wholesalePrice}}</span>
                                                                                         </li>
                                                                                     </ul>
@@ -383,14 +383,14 @@
                                                                                     <ul class="nav">
                                                                                         <li class="text-center">
                                                                                             <span>@lang('Normalpris')</span><span
-                                                                                                class="price">kr
+                                                                                                class="price">€
                                                                                                 {{$row->retailPrice}}</span>
                                                                                         </li>
                                                                                         <li
                                                                                             class="text-center border-0">
                                                                                             <span
                                                                                                 class="midl">Medlemspris</span><span
-                                                                                                class="price blue">kr
+                                                                                                class="price blue">€
                                                                                                 {{$row->wholesalePrice}}</span>
                                                                                         </li>
                                                                                     </ul>
@@ -531,14 +531,14 @@
                                                                                     <ul class="nav">
                                                                                         <li class="text-center">
                                                                                             <span>Normalpris</span><span
-                                                                                                class="price">kr
+                                                                                                class="price">€
                                                                                                 {{$row->retailPrice}}</span>
                                                                                         </li>
                                                                                         <li
                                                                                             class="text-center border-0">
                                                                                             <span
                                                                                                 class="midl">Medlemspris</span><span
-                                                                                                class="price blue">kr
+                                                                                                class="price blue">€
                                                                                                 {{$row->wholesalePrice}}</span>
                                                                                         </li>
                                                                                     </ul>
@@ -816,14 +816,14 @@
                                                                                     <ul class="nav">
                                                                                         <li class="text-center">
                                                                                             <span>Normalpris</span><span
-                                                                                                class="price">kr
+                                                                                                class="price">€
                                                                                                 {{$row->retailPrice}}</span>
                                                                                         </li>
                                                                                         <li
                                                                                             class="text-center border-0">
                                                                                             <span
                                                                                                 class="midl">Medlemspris</span><span
-                                                                                                class="price blue">kr
+                                                                                                class="price blue">€
                                                                                                 {{$row->wholesalePrice}}</span>
                                                                                         </li>
                                                                                     </ul>

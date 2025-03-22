@@ -181,14 +181,14 @@
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>Wholesale Price (kr)</label>
+                                                <label>Wholesale Price (€)</label>
                                                 <input type="number" step="0.01" class="form-control round"
                                                     value="{{$data->wholesalePrice}}" required name="wholesalePrice" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>Retail Price (kr)</label>
+                                                <label>Retail Price (€)</label>
                                                 <input type="number" step="0.01" class="form-control round"
                                                     value="{{$data->retailPrice}}" required name="retailPrice" required>
                                             </div>
@@ -209,42 +209,42 @@
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>NO Wholesale Price (Kr)</label>
+                                                <label>NO Wholesale Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     value="{{$data->no_wholesalePrice}}" required name="no_wholesalePrice" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>NO Retail Price (Kr)</label>
+                                                <label>NO Retail Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     value="{{$data->no_retailPrice}}" required name="no_retailPrice" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>SE Wholesale Price (Kr)</label>
+                                                <label>SE Wholesale Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     value="{{$data->se_wholesalePrice}}" required name="se_wholesalePrice" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>SE Retail Price (Kr)</label>
+                                                <label>SE Retail Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     value="{{$data->se_retailPrice}}" required name="se_retailPrice" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>FI Wholesale Price (kr)</label>
+                                                <label>FI Wholesale Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     value="{{$data->fi_wholesalePrice}}" required name="fi_wholesalePrice" required>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
-                                                <label>FI Retail Price (kr)</label>
+                                                <label>FI Retail Price (€)</label>
                                                 <input type="number" step="any" class="form-control round"
                                                     value="{{$data->fi_retailPrice}}" required name="fi_retailPrice" required>
                                             </div>

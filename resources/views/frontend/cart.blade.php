@@ -65,7 +65,7 @@
                                                         @elseif(app()->getLocale() == 'no')
                                                         <span class="text-end">{{ $row->attributes->se_normal_price }} €</span>
                                                         @else
-                                                        <span class="text-end">kr {{ $row->attributes->normal_price }}</span>
+                                                        <span class="text-end">€ {{ $row->attributes->normal_price }}</span>
                                                         @endif
                                                     </del>
                                                 </span>
@@ -104,7 +104,7 @@
                                             @elseif(app()->getLocale() == 'no')
                                             <span class="text-end">{{ $row->quantity * $row->attributes->no_price }} €</span>
                                             @else
-                                            <span class="text-end"> kr {{ $row->price * $row->quantity }}</span>
+                                            <span class="text-end"> € {{ $row->price * $row->quantity }}</span>
                                             @endif
                                         </h4>
                                         <span class="visually-hidden">@lang('normal_price')</span>

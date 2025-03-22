@@ -74,7 +74,7 @@
                                         <div class="px-3 py-3">
                                             <div class="media">
                                                 <div class="media-body white text-left">
-                                                    <h3>kr {{$sales}} / {{$sales_count}} <span
+                                                    <h3>€ {{$sales}} / {{$sales_count}} <span
                                                             class="text-sm">Sales</span></h3>
                                                     <span>Total Sales</span>
                                                 </div>
@@ -230,7 +230,7 @@
             var chartData = {
                 labels: data["month"],
                 datasets: [{
-                    label: "Sales kr",
+                    label: "Sales €",
                     data: data['sales'],
                     fill: false,
                     borderDash: [5, 5],
@@ -328,7 +328,7 @@
             var chartData = {
                 labels: data["month"],
                 datasets: [{
-                    label: "Sales kr",
+                    label: "Sales €",
                     data: data['sales'],
                     fill: false,
                     borderDash: [5, 5],
