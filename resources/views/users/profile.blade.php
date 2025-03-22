@@ -7,8 +7,8 @@
             <div class="col-lg-12">
                 <div class="single-content">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item">Home</li>
-                        <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                        <li class="breadcrumb-item">@lang('Home')</li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('Profile')</li>
                     </ol>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                                 aria-describedby="inputGroupFileAddon01">
                         </div>
                         <div class="d-flex justify-content-between">
-                            <button  type="submit" class="btn btn-primary">Update Profile</button>
+                            <button  type="submit" class="btn btn-primary">@lang('Update Profile')</button>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#change_password">
                                 <i class="ft-lock"></i>
                                 @lang('Password')

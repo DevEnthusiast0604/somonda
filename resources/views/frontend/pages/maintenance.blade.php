@@ -50,7 +50,7 @@
                                 data-year="{{date('Y', strtotime(is_maintenance()->period))}}"></div>
                             <form method="post" action="{{route('user.subscribe')}}">
                                 @csrf
-                                <input type="email" name="email" placeholder="Enter Your Email" required>
+                                <input type="email" name="email" placeholder="@lang('Enter Your Email')" required>
                                 <button type="submit"><i class="twi-angle-right"></i></button>
                             </form>
                             <div class="coming_social">

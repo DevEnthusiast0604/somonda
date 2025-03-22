@@ -7,8 +7,8 @@
             <div class="col-lg-12">
                 <div class="single-content">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item">Home</li>
-                        <li class="breadcrumb-item active" aria-current="page">Products ({{$count}})</li>
+                        <li class="breadcrumb-item">@lang('Home')</li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('Products') ({{$count}})</li>
                     </ol>
                 </div>
             </div>
@@ -24,9 +24,9 @@
                         <th>@lang('No')</th>
                         <th class="text-center"><i class="ft-image"></i></th>
                         <th><i class="ft-shopping-cart"></i> @lang('Product')</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th><i class="ft-clock"></i> Sales Date</th>
+                        <th>@lang('Quantity')</th>
+                        <th>@lang('Price')</th>
+                        <th><i class="ft-clock"></i> @lang('Sales Date')</th>
                         <th width="100px"><i class="ft-sliders"></i> </th>
                     </tr>
                 </thead>
@@ -47,12 +47,12 @@
                             {{$row->product->name}}
                         </td>
                         <td>{{$row->quantity}}</td>
-                        <td>{{$row->price}} kr</td>
+                        <td>{{$row->price}} €</td>
                          
                         <td>{{date('M d, Y h:i a', strtotime($row->created_at))}}</td>
                         <td width="200">
                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#order{{$row->id}}">
-                                <i class="ft-info"> </i> Shipping Details
+                                <i class="ft-info"> </i> @lang('Shipping Details')
                             </a>
                       
                         </td>
@@ -65,7 +65,7 @@
                             <div class="modal-content semi-round">
                                 <div class="modal-header">
                                     <h5 class="modal-title text-bold-700" id="exampleModalLongTitle"><i
-                                            class="icon-social-dropbox"></i> Shipping Details</h5>
+                                            class="icon-social-dropbox"></i> @lang('Shipping Details')</h5>
                                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -77,7 +77,7 @@
                                                 <input type="text"  disabled  
                                                 class="form-control round"
                                                 name="firstName" value="{{$row->firstName}}"
-                                                placeholder="First Name" required autofocus>
+                                                placeholder="@lang('First Name')" required autofocus>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-2">
@@ -85,7 +85,7 @@
                                                 <input type="text" disabled  
                                                 class="form-control round"
                                                 name="lastName" value="{{$row->lastName}}"
-                                                placeholder="Last Name" required autofocus>
+                                                placeholder="@lang('Last Name')" required autofocus>
                                             </div>
                                         </div>
                                         <div class="col-md-12 mt-2">
@@ -93,7 +93,7 @@
                                                 <input type="text"  disabled 
                                                 class="form-control round"
                                                 name="email" value="{{$row->email}}"
-                                                placeholder="Email" required autofocus>
+                                                placeholder="@lang('Email')" required autofocus>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-2">
@@ -101,7 +101,7 @@
                                                 <input type="text"  disabled 
                                                 class="form-control round"
                                                 name="phone" value="{{$row->phone}}"
-                                                placeholder="Phone" required autofocus>
+                                                placeholder="@lang('Phone')" required autofocus>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-2">
@@ -109,7 +109,7 @@
                                                 <input type="text"   disabled 
                                                 class="form-control round"
                                                 name="town" value="{{$row->town}}"
-                                                placeholder="Town" required autofocus>
+                                                placeholder="@lang('Town')" required autofocus>
                                             </div>
                                         </div>
                                         <div class="col-md-12 mt-2">
@@ -117,7 +117,7 @@
                                                 <input type="text"  disabled 
                                                 class="form-control round"
                                                 name="address" value="{{$row->address}}"
-                                                placeholder="Address" required autofocus>
+                                                placeholder="@lang('Address')" required autofocus>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-2">
@@ -142,7 +142,7 @@
                                                 <input type="text" disabled 
                                                 class="form-control round"
                                                 name="postcode" value="{{$row->postcode}}"
-                                                placeholder="Postcode" required autofocus>
+                                                placeholder="@lang('Postcode')" required autofocus>
                                             </div>
                                         </div>
                                       

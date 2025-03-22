@@ -87,7 +87,7 @@ Route::post('/unsubscribe', [FrontendController::class, 'update_unsubscribe'])->
 
 Route::get('/maintenance', function(){
     return view('frontend.pages.maintenance');
-})->name('maintenance');
+})->name('maintenance')->middleware('setPageLocale:fr');
 
 
 // Ajax Call
@@ -102,7 +102,7 @@ Route::group(array('middleware' => array('auth')), function(){
     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 });
 
-Route::group(array('middleware' => array('auth','is_maintenance')), function(){
+Route::group(array('middleware' => array('auth','is_maintenance', 'setPageLocale:fr')), function(){
     //Users
     Route::group(['prefix'=>'user'], function(){
         Route::get('profile',[UsersController::class, 'profile'])->name('user.profile');

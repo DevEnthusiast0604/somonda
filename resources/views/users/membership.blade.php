@@ -34,8 +34,8 @@
             <div class="col-lg-12">
                 <div class="single-content">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item">Home</li>
-                        <li class="breadcrumb-item active" aria-current="page">Membership</li>
+                        <li class="breadcrumb-item">@lang('Home')</li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('Membership')</li>
                     </ol>
                 </div>
             </div>
@@ -81,18 +81,18 @@
             <div class="col-lg-12">
                 <div class="account-card mb-2 alert fade show">
                     <div class="account-title">
-                        <h3>Membership</h3>
+                        <h3>@lang('Membership')</h3>
                     </div>
                     @if($membership == 'no_member')
-                    <p class="membership">You are not a subscribed member.</p>
+                    <p class="membership">@lang('You are not a subscribed member.')</p>
                     @else
                     <div class="dash-content">
                         <p class="membership">{{$membership}}</p>
                         <span class="membership_price">{{$membership_price}}</span> /<span
                             class="membership_period">{{$membership_period}}</span>
                             @if($days <= 30) <h5 class="free_trial">{{$brand}} <span>****{{$last4}}</span></h5>
-                            <span class="free_trial1"><i class="fas fa-info-circle"></i> Free trial {{7 - $days}} days
-                                {{24 - $hours}} hours remain</span>
+                            <span class="free_trial1"><i class="fas fa-info-circle"></i> @lang('Free trial') {{7 - $days}} @lang('days')
+                                {{24 - $hours}} @lang('hours remain')</span>
                             @else
                             <h5>{{$brand}} <span>****{{$last4}}</span></h5>
                             @endif
@@ -108,11 +108,9 @@
             <div class="col-lg-12">
                 <div class="adpost-card alert fade py-4 show text-right">
                     @if($membership == 'no_member')
-                    <a href="{{url('/')}}" class="btn btn-primary"><i class="ft-shopping-cart"></i> Purchase
-                        Membership</a>
+                    <a href="{{url('/')}}" class="btn btn-primary"><i class="ft-shopping-cart"></i> @lang('Purchase Membership')</a>
                     @else
-                        <button onclick="cancel_membership()" class="btn btn-danger"><i class="ft-x-circle"></i> Cancel
-                        Membership</button>
+                        <button onclick="cancel_membership()" class="btn btn-danger"><i class="ft-x-circle"></i> @lang('Cancel Membership')</button>
                     @endif
                 </div>
             </div>
