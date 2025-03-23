@@ -96,84 +96,84 @@ class FrontendController extends Controller
     public function product_view(Request $request, $url){
         $data = Product::where('url', $url)->first();
         if($data) {
-        if($request->lang == "fr"){
-            app()->setLocale("fr");
-            $lang = "fr";
-            $product = [
-               "name" => $data->detail->fr_name,
-               "description" => $data->detail->fr_description
-            ];
-            // return view('frontend.products.fr_view', compact('data','product'));
-        }elseif($request->lang == "it"){
-            app()->setLocale("it");
-            $lang = "it";
-            $product = [
-               "name" => $data->detail->it_name,
-               "description" => $data->detail->it_description
-            ];
-            // return view('frontend.products.it_view', compact('data','product'));
-        }elseif($request->lang == "sv"){
-            app()->setLocale("sv");
-            $lang = "sv";
-            $product = [
-                "name" => $data->detail->sv_name,
-                "description" => $data->detail->sv_description
-            ];
-        }elseif($request->lang == "pt"){
-            app()->setLocale("pt");
-            $lang = "pt";
-            $product = [
-                "name" => $data->detail->pt_name,
-                "description" => $data->detail->pt_description
-            ];
-        }elseif($request->lang == "da"){
-            app()->setLocale("da");
-            $lang = "da";
-            $product = [
-                "name" => $data->detail->da_name,
-                "description" => $data->detail->da_description
-            ];
-        }elseif($request->lang == "nl"){
-            app()->setLocale("nl");
-            $lang = "nl";
-            $product = [
-                "name" => $data->detail->nl_name,
-                "description" => $data->detail->nl_description
-            ];
-        }elseif($request->lang == "ge"){
-            app()->setLocale("ge");
-            $lang = "ge";
-            $product = [
-                "name" => $data->detail->ge_name,
-                "description" => $data->detail->ge_description
-            ];
-        }elseif($request->lang == "fi"){
-            app()->setLocale("fi");
-            $lang = "fi";
-            $product = [
-                "name" => $data->detail->fi_name,
-                "description" => $data->detail->fi_description
-            ];
-        }elseif($request->lang == "no"){
-            app()->setLocale("no");
-            $lang = "no";
-            $product = [
-                "name" => $data->detail->no_name,
-                "description" => $data->detail->no_description
-            ];
-        }else{
-            app()->setLocale("en");
-            $lang = "en";
+        // if($request->lang == "fr"){
+        //     app()->setLocale("fr");
+        //     $lang = "fr";
+        //     $product = [
+        //        "name" => $data->detail->fr_name,
+        //        "description" => $data->detail->fr_description
+        //     ];
+        //     // return view('frontend.products.fr_view', compact('data','product'));
+        // }elseif($request->lang == "it"){
+        //     app()->setLocale("it");
+        //     $lang = "it";
+        //     $product = [
+        //        "name" => $data->detail->it_name,
+        //        "description" => $data->detail->it_description
+        //     ];
+        //     // return view('frontend.products.it_view', compact('data','product'));
+        // }elseif($request->lang == "sv"){
+        //     app()->setLocale("sv");
+        //     $lang = "sv";
+        //     $product = [
+        //         "name" => $data->detail->sv_name,
+        //         "description" => $data->detail->sv_description
+        //     ];
+        // }elseif($request->lang == "pt"){
+        //     app()->setLocale("pt");
+        //     $lang = "pt";
+        //     $product = [
+        //         "name" => $data->detail->pt_name,
+        //         "description" => $data->detail->pt_description
+        //     ];
+        // }elseif($request->lang == "da"){
+        //     app()->setLocale("da");
+        //     $lang = "da";
+        //     $product = [
+        //         "name" => $data->detail->da_name,
+        //         "description" => $data->detail->da_description
+        //     ];
+        // }elseif($request->lang == "nl"){
+        //     app()->setLocale("nl");
+        //     $lang = "nl";
+        //     $product = [
+        //         "name" => $data->detail->nl_name,
+        //         "description" => $data->detail->nl_description
+        //     ];
+        // }elseif($request->lang == "ge"){
+        //     app()->setLocale("ge");
+        //     $lang = "ge";
+        //     $product = [
+        //         "name" => $data->detail->ge_name,
+        //         "description" => $data->detail->ge_description
+        //     ];
+        // }elseif($request->lang == "fi"){
+        //     app()->setLocale("fi");
+        //     $lang = "fi";
+        //     $product = [
+        //         "name" => $data->detail->fi_name,
+        //         "description" => $data->detail->fi_description
+        //     ];
+        // }elseif($request->lang == "no"){
+        //     app()->setLocale("no");
+        //     $lang = "no";
+        //     $product = [
+        //         "name" => $data->detail->no_name,
+        //         "description" => $data->detail->no_description
+        //     ];
+        // }else{
+        //     app()->setLocale("en");
+        //     $lang = "en";
             $product = [
                 "name" => $data->name,
                 "description" => $data->description
             ];
-        }
+        // }
     }
         $sek_rate = Currency::convert()->from('EUR')->to('SEK')->get();
         $nok_rate = Currency::convert()->from('EUR')->to('NOK')->get();
         if($data){
-            \Session::put('locale',$lang);
+            // \Session::put('locale',$lang);
             \Session::put('landing', 1);
 
             $price = \Cart::getTotal();
