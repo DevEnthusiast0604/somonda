@@ -234,14 +234,14 @@
                                                                                 <div class="product-item-footer">
                                                                                     <ul class="nav">
                                                                                         <li class="text-center">
-                                                                                            <span>Normalpris</span><span
+                                                                                            <span>@lang('Normalpris')</span><span
                                                                                                 class="price">€
                                                                                                 {{$row->retailPrice}}</span>
                                                                                         </li>
                                                                                         <li
                                                                                             class="text-center border-0">
                                                                                             <span
-                                                                                                class="midl">Medlemspris</span><span
+                                                                                                class="midl">@lang('Medlemspris')</span><span
                                                                                                 class="price blue">€
                                                                                              {{$row->wholesalePrice}}</span>
                                                                                         </li>
@@ -389,7 +389,7 @@
                                                                                         <li
                                                                                             class="text-center border-0">
                                                                                             <span
-                                                                                                class="midl">Medlemspris</span><span
+                                                                                                class="midl">@lang('Medlemspris')</span><span
                                                                                                 class="price blue">€
                                                                                                 {{$row->wholesalePrice}}</span>
                                                                                         </li>
@@ -530,14 +530,14 @@
                                                                                 <div class="product-item-footer">
                                                                                     <ul class="nav">
                                                                                         <li class="text-center">
-                                                                                            <span>Normalpris</span><span
+                                                                                            <span>@lang('Normalpris')</span><span
                                                                                                 class="price">€
                                                                                                 {{$row->retailPrice}}</span>
                                                                                         </li>
                                                                                         <li
                                                                                             class="text-center border-0">
                                                                                             <span
-                                                                                                class="midl">Medlemspris</span><span
+                                                                                                class="midl">@lang('Medlemspris')</span><span
                                                                                                 class="price blue">€
                                                                                                 {{$row->wholesalePrice}}</span>
                                                                                         </li>
