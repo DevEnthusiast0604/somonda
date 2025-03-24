@@ -340,5 +340,10 @@
     "Phone": "Téléphone",
     "Town": "Ville",
     "Address": "Adresse",
-    "Postcode": "Code postal"
+    "Postcode": "Code postal",
+    
+    "Name": "Nom",
+    "Subject": "Sujette",
+    "Message": "Message",
+    "Submit": "Soumettre"
 }

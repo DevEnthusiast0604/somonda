@@ -341,5 +341,10 @@
      "Phone": "Phone",
      "Town": "Town",
      "Address": "Address",
-     "Postcode": "Postcode"
+     "Postcode": "Postcode",
+
+     "Name": "Name",
+     "Subject": "Subject",
+     "Message": "Message",
+     "Submit": "Submit"
 }
