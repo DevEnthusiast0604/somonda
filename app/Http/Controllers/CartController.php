@@ -358,7 +358,6 @@ class CartController extends Controller
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
                     'description' => 'Purchase products from PlusDeal',
-                    'confirmation_method' => 'manual',
                     'automatic_payment_methods' => [
                         'enabled' => true,
                         'allow_redirects' => 'never' // Disables any redirect-based payment methods
@@ -375,8 +374,6 @@ class CartController extends Controller
                         ]);
                     }
                 }
-
-                $paymentIntent->confirm();
 
                 if ($paymentIntent->status === 'succeeded') {
                     if($user_status == 'new'){
