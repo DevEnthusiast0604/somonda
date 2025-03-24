@@ -358,7 +358,10 @@ class CartController extends Controller
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
                     'description' => 'Purchase products from PlusDeal',
-                    'confirmation_method' => 'automatic',
+                    'automatic_payment_methods' => [
+                        'enabled' => true,
+                        'allow_redirects' => 'never'
+                    ]
                 ]);
               
                 if ($paymentIntent->status === 'requires_confirmation') {
@@ -371,6 +374,8 @@ class CartController extends Controller
                         ]);
                     }
                 }
+
+                $paymentIntent->confirm();
                
             } catch (\Stripe\Exception\CardException $e) {
                 // Handle card errors
