@@ -255,17 +255,19 @@ class CartController extends Controller
                  // Pay with saved payment method
                 \Stripe\Charge::create ([
                     "amount" => 100 * $price,
-                    "currency" => "dkk",
+                    "currency" => "eur",
                     "customer" => $user->stripe_id,
                     "description" => "Purchase products from PlusDeal",
+                    'confirmation_method' => 'automatic',
                     "return_url" => route('thankyou'),
                 ]); 
             }else{
                  \Stripe\Charge::create ([
                     "amount" => 100 * $price,
-                    "currency" => "dkk",
+                    "currency" => "eur",
                     "source" => $token,
                     "description" => "Purchase products from PlusDeal" ,
+                    'confirmation_method' => 'automatic',
                     "return_url" => route('thankyou'),
                 ]);
             } 
@@ -494,10 +496,11 @@ class CartController extends Controller
                 // Create a payment intent with the product price
                 $paymentIntent = PaymentIntent::create([
                     'amount' => 100 * $price,
-                    'currency' => 'dkk',
+                    'currency' => 'eur',
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
                     'description' => 'Purchase products from PlusDeal',
+                    'confirmation_method' => 'automatic',
                     'confirm' => true
                 ]);
                 if ($paymentIntent->status === 'requires_action' && $paymentIntent->next_action->type === 'use_stripe_sdk') {
