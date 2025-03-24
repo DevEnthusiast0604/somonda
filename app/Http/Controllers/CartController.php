@@ -352,10 +352,11 @@ class CartController extends Controller
                 // Create a payment intent with the product price
                 $paymentIntent = PaymentIntent::create([
                     'amount' => 100 * $price,
-                    'currency' => 'dkk',
+                    'currency' => 'eur',
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
                     'description' => 'Purchase products from PlusDeal',
+                    'confirmation_method' => 'automatic',
                 ]);
               
                 if ($paymentIntent->status === 'requires_confirmation') {
