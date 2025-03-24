@@ -24,7 +24,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="intro-item mx-auto">
                         <figure class="mx-auto">
-                            <img src="assets/images/icon-1.png" alt="">
+                            <img src="assets/images/icon_1_green.png" alt="">
                         </figure>
                         <h4 class="text-center">@lang('Save up to 80%')</h4>
                         <p class="text-center">@lang('On more than 1.000 well known brands')</p>
@@ -34,7 +34,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="intro-item mx-auto">
                         <figure class="mx-auto">
-                            <img src="assets/images/icon-2.png" alt="">
+                            <img src="assets/images/icon_2_green.png" alt="">
                         </figure>
                         <h4 class="text-center">@lang('Fast delivery')</h4>
                         <p class="text-center">@lang('Get fast and free delivery all over the world')</p>
@@ -44,7 +44,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="intro-item mx-auto">
                         <figure class="mx-auto">
-                            <img src="assets/images/icon-3.png" alt="">
+                            <img src="assets/images/icon_3_green.png" alt="">
                         </figure>
                         <h4 class="text-center">@lang('Secure payment')</h4>
                         <p class="text-center">@lang('We use SSL and ensure that you are secure when you shop on our site')</p>
@@ -54,7 +54,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="intro-item mx-auto">
                         <figure class="mx-auto">
-                            <img src="assets/images/icon-4.png" alt="">
+                            <img src="assets/images/icon_4_green.png" alt="">
                         </figure>
                         <h4 class="text-center">@lang('24/7 Customer Support')</h4>
                         <p class="text-center">@lang("Do you have any questions or issues? Then don't hesitate to contact us")</p>

@@ -16,7 +16,7 @@
                             Pour devenir membre, vous devez avoir plus de 18 ans,
                             ce que vous devez confirmer lors de votre inscription et de votre premier achat.
                             plusdeal.fr est réservé aux clients privés et à un usage personnel.
-                            L'adhésion coûte 179 DKK par mois. Votre abonnement est débité chaque mois jusqu'à ce que vous
+                            L'adhésion coûte € 19.95 par mois. Votre abonnement est débité chaque mois jusqu'à ce que vous
                             annuliez votre adhésion.
                             Vous pouvez résilier votre adhésion à tout moment en vous connectant à Plusdeal.fr et en
                             sélectionnant « Mon adhésion » dans l'onglet du menu.
@@ -34,7 +34,7 @@
                             notre large gamme de produits à prix réduits.
                             Vous pouvez vous inscrire pour un essai de 7 jours de notre adhésion et acheter immédiatement à
                             des prix réduits.
-                            Après l'essai, votre adhésion sera automatiquement facturée 179 DKK chaque mois jusqu'à
+                            Après l'essai, votre adhésion sera automatiquement facturée € 19.95 chaque mois jusqu'à
                             annulation.
                             N'oubliez pas que vous pouvez vous désabonner de votre adhésion à tout moment.
                             Une fois votre commande terminée, vous recevrez une confirmation de commande par e-mail.
