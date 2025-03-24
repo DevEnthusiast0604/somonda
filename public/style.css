@@ -235,7 +235,7 @@ header {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 21px;
-	color: #69b783;
+	color: black;
 	margin-bottom: 4px;
 }
 .product-item-content span {
@@ -1071,7 +1071,7 @@ header {
 .product-item.lg .product-item-content p {
 	font-size: 24px;
 	line-height: 28px;
-	color: #69b783;
+	color: black;
 	margin-bottom: 12px;
 }
 
