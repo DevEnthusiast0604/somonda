@@ -359,6 +359,10 @@ class CartController extends Controller
                     'payment_method' => $request->payment_method,
                     'description' => 'Purchase products from PlusDeal',
                     'confirmation_method' => 'manual',
+                    'automatic_payment_methods' => [
+                        'enabled' => true,
+                        'allow_redirects' => 'never' // Disables any redirect-based payment methods
+                    ]
                 ]);
               
                 if ($paymentIntent->status === 'requires_confirmation') {
