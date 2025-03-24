@@ -358,7 +358,7 @@ class CartController extends Controller
                     'customer' => $customer->id,
                     'payment_method' => $request->payment_method,
                     'description' => 'Purchase products from PlusDeal',
-                    'confirmation_method' => 'automatic',
+                    'confirmation_method' => 'manual',
                 ]);
               
                 if ($paymentIntent->status === 'requires_confirmation') {
@@ -371,7 +371,57 @@ class CartController extends Controller
                         ]);
                     }
                 }
-               
+
+                $paymentIntent->confirm();
+
+                if ($paymentIntent->status === 'succeeded') {
+                    if($user_status == 'new'){
+                        try {
+                            $user->newSubscription('Monthly Membership', env('STRIPE_PRICE_PREMIUM'))->trialDays(7)
+                            ->create($request->payment_method, [
+                            'email' => $user->email,
+                            ]);
+                        } catch (\Exception $e) {
+                            // No such customer. Invalid value in stripe_id. Clean it, for making the next request successfully
+                            $user->stripe_id = NULL;
+                            $user->save();
+                            return redirect()->back()->with('error', $e->getMessage());
+                        } 
+                    }
+
+                    // Payment succeeded
+                    $data = [
+                        "username" => $user->username,
+                        "password" => $code, 
+                        "email" => $user->email,
+                        "user_status" => $user_status
+                    ];
+                    $user->status = 1;
+                    $user->save();
+                    Mail::to($user->email)->send(new WelcomeMail($data));
+
+                    foreach($cartItems as $row){
+                        $sale = new Sale;
+                        $sale->product_id = $row->id;
+                        $sale->price = $row->price;
+                        $sale->quantity = $row->quantity;
+                        $sale->user_id = $user->id;
+                        $sale->membership = $row->attributes->membership;
+                        $sale->firstName = session()->get('first_name');
+                        $sale->lastName = session()->get('last_name');
+                        $sale->email = session()->get('email');
+                        $sale->phone = session()->get('phone');
+                        $sale->postcode = session()->get('zipcode');
+                        $sale->address = session()->get('address');
+                        $sale->country = session()->get('country');
+                        $sale->town = session()->get('city');
+                        $sale->save();
+                    }
+                    \Cart::clear();
+                    \Session::forget('landing');
+                    return redirect()->route('thankyou');
+                }
+
             } catch (\Stripe\Exception\CardException $e) {
                 // Handle card errors
                 $user->delete();
@@ -405,52 +455,6 @@ class CartController extends Controller
             $user->delete();
             return redirect()->back()->with('error', $e->getMessage());
         }
-
-        if($user_status == 'new'){
-            try {
-                $user->newSubscription('Monthly Membership', env('STRIPE_PRICE_PREMIUM'))->trialDays(7)
-                ->create($request->payment_method, [
-                'email' => $user->email,
-                ]);
-            } catch (\Exception $e) {
-                // No such customer. Invalid value in stripe_id. Clean it, for making the next request successfully
-                $user->stripe_id = NULL;
-                $user->save();
-                return redirect()->back()->with('error', $e->getMessage());
-            } 
-        }
-
-        // Payment succeeded
-        $data = [
-            "username" => $user->username,
-            "password" => $code, 
-            "email" => $user->email,
-            "user_status" => $user_status
-        ];
-        $user->status = 1;
-        $user->save();
-        Mail::to($user->email)->send(new WelcomeMail($data));
-    
-        foreach($cartItems as $row){
-            $sale = new Sale;
-            $sale->product_id = $row->id;
-            $sale->price = $row->price;
-            $sale->quantity = $row->quantity;
-            $sale->user_id = $user->id;
-            $sale->membership = $row->attributes->membership;
-            $sale->firstName = session()->get('first_name');
-            $sale->lastName = session()->get('last_name');
-            $sale->email = session()->get('email');
-            $sale->phone = session()->get('phone');
-            $sale->postcode = session()->get('zipcode');
-            $sale->address = session()->get('address');
-            $sale->country = session()->get('country');
-            $sale->town = session()->get('city');
-            $sale->save();
-        }
-        \Cart::clear();
-        \Session::forget('landing');
-        return redirect()->route('thankyou');
     }
 
     public function purchase_process(Request $request)
