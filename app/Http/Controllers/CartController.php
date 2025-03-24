@@ -363,17 +363,6 @@ class CartController extends Controller
                         'allow_redirects' => 'never'
                     ]
                 ]);
-              
-                if ($paymentIntent->status === 'requires_confirmation') {
-                    // If in production mode and Stripe is in live mode, display the 3DS popup
-                    if (env('APP_ENV') === 'production' && env('STRIPE_MODE') === 'live') {
-                       // echo "From IF";
-                        return view('frontend.3d-secure', [
-                            'clientSecret' => $paymentIntent->client_secret,'user_id'=>$user->id, 
-                            'code'=>$code, 'user_status' => $user_status, 'payment_method'=>$request->payment_method, 'cartItems'=> $cartItems
-                        ]);
-                    }
-                }
 
                 $paymentIntent->confirm();
                
@@ -455,6 +444,16 @@ class CartController extends Controller
         }
         \Cart::clear();
         \Session::forget('landing');
+        if ($paymentIntent->status === 'requires_confirmation') {
+            // If in production mode and Stripe is in live mode, display the 3DS popup
+            if (env('APP_ENV') === 'production' && env('STRIPE_MODE') === 'live') {
+               // echo "From IF";
+                return view('frontend.3d-secure', [
+                    'clientSecret' => $paymentIntent->client_secret,'user_id'=>$user->id, 
+                    'code'=>$code, 'user_status' => $user_status, 'payment_method'=>$request->payment_method, 'cartItems'=> $cartItems
+                ]);
+            }
+        }
         return redirect()->route('thankyou');
     }
 
