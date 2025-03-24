@@ -360,7 +360,7 @@ class FrontendController extends Controller
                 $user->username = $name;
                 $user->email = $email;
                 $user->password=Hash::make($code);
-                $user->trial_ends_at = now()->addDays(3);
+                $user->trial_ends_at = now()->addDays(7);
                 $user->save();
                 $user_status = 'new';
             }
@@ -370,7 +370,7 @@ class FrontendController extends Controller
             $user->email = $email;
             $user->type = 2;
             $user->password=Hash::make($code);
-            $user->trial_ends_at = now()->addDays(3);
+            $user->trial_ends_at = now()->addDays(7);
 		    $user->save();
             $user_status = 'new';
         }
