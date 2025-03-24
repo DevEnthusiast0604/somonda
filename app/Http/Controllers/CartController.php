@@ -423,7 +423,7 @@ class CartController extends Controller
         ];
         $user->status = 1;
         $user->save();
-        // Mail::to($user->email)->send(new WelcomeMail($data));
+        Mail::to($user->email)->send(new WelcomeMail($data));
     
         foreach($cartItems as $row){
             $sale = new Sale;
