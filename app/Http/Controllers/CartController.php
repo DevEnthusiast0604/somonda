@@ -444,7 +444,7 @@ class CartController extends Controller
         }
         \Cart::clear();
         \Session::forget('landing');
-        if ($paymentIntent->status === 'requires_confirmation') {
+        if ($paymentIntent->status === 'requires_confirmation' || $paymentIntent->status === 'requires_action') {
             // If in production mode and Stripe is in live mode, display the 3DS popup
             if (env('APP_ENV') === 'production' && env('STRIPE_MODE') === 'live') {
                // echo "From IF";
