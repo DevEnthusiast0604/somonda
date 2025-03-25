@@ -298,6 +298,8 @@ class ProductController extends Controller
     
             $productdetail = new Productdetail;
             $productdetail->product_id = $prod->id;
+            $productdetail->fr_name = $request->name;
+            $productdetail->fr_description = $request->description;
             $productdetail->save();
     
             return Redirect::route('admin.products')->with('success', 'Product was added successfully!');  
