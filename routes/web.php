@@ -31,8 +31,12 @@ Route::middleware(['setPageLocale:fr', 'is_maintenance'])->group(function () {
     Route::prefix('products')->group(function () {
         Route::get('/', [FrontendController::class, 'products_all'])->name('products.all');
         Route::get('/{category_url}', [FrontendController::class, 'products'])->name('products');
-        Route::get('/details/{product_url}', [FrontendController::class, 'product_details'])->name('products.details');
-        Route::get('/view/{product_url}', [FrontendController::class, 'product_view'])->name('products.view');
+        Route::get('/details/{product_url}', [FrontendController::class, 'product_details'])
+            ->where('product_url', '.*')
+            ->name('products.details');    
+        Route::get('/view/{product_url}', [FrontendController::class, 'product_view'])->name('products.view')
+            ->where('product_url', '.*')
+            ->name('products.details');    
         Route::get('/purchase/{product_url}', [FrontendController::class, 'product_purchase'])->name('products.purchase');
     });
     Route::prefix('cart')->group(function () {
