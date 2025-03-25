@@ -79,7 +79,7 @@ class FrontendController extends Controller
     }
 
     public function product_details($url){
-        \Session::forget('landing');
+        \Session::put('landing', 0);
         $data = Product::where('url', $url)->first();
         $new_products = Product::where('status', 1)->where('condition', 'NEW')->inRandomOrder()->limit(4)->get();
         $new_products_count = Product::where('status', 1)->where('condition', 'NEW')->count();
