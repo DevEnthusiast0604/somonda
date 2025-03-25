@@ -152,15 +152,15 @@
                                         <div class="col-lg-12">
                                             <label class="form-label">@lang('delivery_address')</label>
                                             <select class="form-control" name="country">
-                                                <option value="SE" @if(app()->getLocale() == 'sv') selected @endif>Sweden</option>
-                                                <option value="GE" @if(app()->getLocale() == 'ge') selected @endif>German</option>
-                                                <option value="NL" @if(app()->getLocale() == 'nl') selected @endif>Netherlands</option>
-                                                <option value="FI" @if(app()->getLocale() == 'fi') selected @endif>Finland</option>
-                                                <option value="FR" @if(app()->getLocale() == 'fr') selected @endif>French</option>
-                                                <option value="DK" @if(app()->getLocale() == 'da') selected @endif>Denmark</option>
-                                                <option value="IT" @if(app()->getLocale() == 'it') selected @endif>Italy</option>
-                                                <option value="PT" @if(app()->getLocale() == 'pt') selected @endif>Portugal</option>
-                                                <option value="NO" @if(app()->getLocale() == 'no') selected @endif>Norway</option>
+                                                <!-- <option value="SE" @if(app()->getLocale() == 'sv') selected @endif>Sweden</option> -->
+                                                <!-- <option value="GE" @if(app()->getLocale() == 'ge') selected @endif>German</option> -->
+                                                <!-- <option value="NL" @if(app()->getLocale() == 'nl') selected @endif>Netherlands</option> -->
+                                                <!-- <option value="FI" @if(app()->getLocale() == 'fi') selected @endif>Finland</option> -->
+                                                <option value="FR" @if(app()->getLocale() == 'fr') selected @endif>France</option>
+                                                <!-- <option value="DK" @if(app()->getLocale() == 'da') selected @endif>Denmark</option> -->
+                                                <!-- <option value="IT" @if(app()->getLocale() == 'it') selected @endif>Italy</option> -->
+                                                <!-- <option value="PT" @if(app()->getLocale() == 'pt') selected @endif>Portugal</option> -->
+                                                <!-- <option value="NO" @if(app()->getLocale() == 'no') selected @endif>Norway</option> -->
                                             </select>
                                         </div>
                                         <div class="col-lg-6">
