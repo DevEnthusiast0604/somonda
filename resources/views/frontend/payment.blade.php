@@ -21,7 +21,7 @@
                                 <div id="card-form-error" class="text-danger"></div>
                              </div>
                             @if(session()->get('landing') != 1)
-                            <div class="form-check clearfix mt-3">
+                            <div class="form-check clearfix mt-3 d-none d-md-block">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault_term" required>
                                 <label class="form-check-label" for="flexCheckDefault_term">
                                     @lang('terms')
@@ -165,6 +165,7 @@ LONDON WC2H 9JQ | Rebel Monkey Marketing Ltd Co no. 14009110</strong> -->
             if (result.error) {
                 // Display error message to the user
                 var errorElement = document.getElementById('card-errors');
+                console.log(result.error.message);
                 errorElement.textContent = result.error.message;
 
                 // Enable the submit button
