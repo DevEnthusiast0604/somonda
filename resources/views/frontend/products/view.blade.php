@@ -440,10 +440,12 @@
                                                     </div>
                                                     <div class="author__time">
                                                         <time class="alireview-date">
-                                                            Mar 15, 2023
+                                                            Mar 15, 2025
                                                         </time>
                                                         <div class="national_flag">
-                                                            <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png" class="lazy"
+                                                            <!-- <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png" class="lazy"
+                                                                alt=""> -->
+                                                            <img data-src="{{asset('assets/images/flags')}}/fr.png" class="lazy"
                                                                 alt="">
                                                         </div>
                                                     </div>
@@ -511,10 +513,10 @@
                                                     </div>
                                                     <div class="author__time">
                                                         <time class="alireview-date">
-                                                            Mar 15, 2023
+                                                            Mar 15, 2025
                                                         </time>
                                                         <div class="national_flag">
-                                                            <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png" class="lazy"
+                                                            <img data-src="{{asset('assets/images/flags')}}/fr.png" class="lazy"
                                                                 alt="">
                                                         </div>
                                                     </div>
@@ -583,10 +585,10 @@
                                                     </div>
                                                     <div class="author__time">
                                                         <time class="alireview-date">
-                                                            Mar 14, 2023
+                                                            Mar 14, 2025
                                                         </time>
                                                         <div class="national_flag">
-                                                            <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png"
+                                                            <img data-src="{{asset('assets/images/flags')}}/fr.png"
                                                                 alt="flag" class="lazy">
                                                         </div>
                                                     </div>
@@ -655,10 +657,10 @@
                                                     </div>
                                                     <div class="author__time">
                                                         <time class="alireview-date">
-                                                            Mar 12, 2023
+                                                            Mar 12, 2025
                                                         </time>
                                                         <div class="national_flag">
-                                                            <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png" class="lazy"
+                                                            <img data-src="{{asset('assets/images/flags')}}/fr.png" class="lazy"
                                                                 alt="">
                                                         </div>
                                                     </div>
@@ -727,10 +729,10 @@
                                                     </div>
                                                     <div class="author__time">
                                                         <time class="alireview-date">
-                                                            Mar 12, 2023
+                                                            Mar 12, 2025
                                                         </time>
                                                         <div class="national_flag">
-                                                            <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png"
+                                                            <img data-src="{{asset('assets/images/flags')}}/fr.png"
                                                                 alt="" class="lazy">
                                                         </div>
                                                     </div>
@@ -799,10 +801,10 @@
                                                     </div>
                                                     <div class="author__time">
                                                         <time class="alireview-date">
-                                                            Mar 10, 2023
+                                                            Mar 10, 2025
                                                         </time>
                                                         <div class="national_flag">
-                                                            <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png"
+                                                            <img data-src="{{asset('assets/images/flags')}}/fr.png"
                                                                 alt="" class="lazy">
                                                         </div>
                                                     </div>
@@ -871,10 +873,10 @@
                                                     </div>
                                                     <div class="author__time">
                                                         <time class="alireview-date">
-                                                            Feb 27, 2023
+                                                            Feb 27, 2025
                                                         </time>
                                                         <div class="national_flag">
-                                                            <img data-src="{{asset('assets/images/flags')}}/{{app()->getLocale()}}.png"
+                                                            <img data-src="{{asset('assets/images/flags')}}/fr.png"
                                                                 alt="" class="lazy">
                                                         </div>
                                                     </div>
